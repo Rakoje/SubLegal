@@ -11,6 +11,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../js/main_script.js"></script>
     <link rel="stylesheet" href="../css/main_style.css">
-    <link rel="icon" type="image" href="assets/SS 7.png">
+    <link rel="icon" type="image" href="../assets/SS 7.png">
     <title>SubLegal</title>
 </head>

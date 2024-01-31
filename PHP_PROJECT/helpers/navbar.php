@@ -23,6 +23,9 @@
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../contact/contact.php">CONTACT</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="../admin/login.php">ADMIN</a>
+                </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
