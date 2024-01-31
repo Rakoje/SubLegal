@@ -23,6 +23,7 @@
                         <div>
                             <button type="button" id="login_submit" class="btn btn-primary btn-block">Proceed</button>
                         </div>
+                        <div id="error-message-login"></div>
                     </form>
                 </div>
             </div>

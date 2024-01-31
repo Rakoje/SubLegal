@@ -32,6 +32,7 @@ if($action == "login"){
                 ));
             } else {
                 $error .= "\nPassword doesn't match the username!";
+
             }
         } else {
             $error .= "\nUsername doesn't exist!";

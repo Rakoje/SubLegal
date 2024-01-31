@@ -20,7 +20,7 @@ $(document).ready(function() {
                 if(data.success){
                     window.location.assign('../admin/new_project.php');
                 } else {
-                    alert(data.error);
+                    $("#error-message-login").text(data.error)
                 }
             }
         })

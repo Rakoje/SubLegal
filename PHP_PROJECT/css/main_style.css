@@ -60,6 +60,12 @@ footer a:hover {
     color: rgb(182, 181, 181);
 }
 
+#error-message-login {
+    color: red;
+    font-size: small;
+    margin-top: 5px; /* Add some space between the button and the error message */
+}
+
 .home-bg {
     background-image: url(../assets/pxfuel.jpg);
     min-height: 600px;
