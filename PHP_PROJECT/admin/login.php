@@ -5,7 +5,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card">
+            <div class="card-login">
                 <div class="card-header">
                     <h5 class="card-title text-center">Login</h5>
                 </div>
@@ -20,8 +20,8 @@
                             <input type="password" class="form-control" id="in_password" name="in_password" required>
                         </div>
                         <br>
-                        <div>
-                            <button type="button" id="login_submit" class="btn btn-primary btn-block">Proceed</button>
+                        <div class="text-center">
+                            <button type="button" id="login_submit" class="btn btn-dark btn-block">Proceed</button>
                         </div>
                         <div id="error-message-login"></div>
                     </form>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2593882d-f582-489b-a79c-80df3a89d9b0" name="SubLegal" url="http://localhost">
+        <fileTransfer mountedRoot="C:\wamp64\www\PHP_PROJECT" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

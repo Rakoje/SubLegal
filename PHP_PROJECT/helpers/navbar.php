@@ -10,7 +10,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
 
 <nav class="navbar navbar-expand-lg navbar-light p-3 py-3">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../assets/SS 7.png" height="60px" alt=""><img src="../assets/text logo.png" height="60px" alt=""></a>
+        <a class="navbar-brand" href="../index.php"><img src="../assets/SS 7.png" height="60px" alt=""><img src="../assets/text logo.png" height="60px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
