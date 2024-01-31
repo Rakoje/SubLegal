@@ -1,5 +1,5 @@
 <?php
-include('db.php');
+include('../db.php');
 
 $action = $_POST['action'];
 
@@ -14,18 +14,19 @@ if($action == "login"){
 
     if($error == ""){
         $query = "SELECT count(*) cnt from admin
-              where username = $username";
+              where username = '$username'";
 
         $cnt = $pdo->query($query)->fetch()['cnt'];
 
         if($cnt > 0){
             $query = "SELECT count(*) cnt from admin
-              where password = $password
-              and username = $username";
+              where password = '$password'
+              and username = '$username'";
 
             $cnt_pass = $pdo->query($query)->fetch()['cnt'];
 
             if($cnt_pass > 0){
+                $_SESSION['logged'] = true;
                 echo json_encode(array(
                     "success" => 1
                 ));
@@ -42,8 +43,6 @@ if($action == "login"){
             "success" => 0,
             "error" => $error
         ));
-
 }
-
 
 ?>
