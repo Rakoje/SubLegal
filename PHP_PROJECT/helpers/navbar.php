@@ -1,6 +1,5 @@
 <?php
 $admin_href = "../admin/login.php";
-
 if(isset($_SESSION['logged']) && $_SESSION['logged']) $admin_href = "../admin/new_project.php";
 ?>
 

@@ -26,26 +26,3 @@ $(document).ready(function() {
         })
     });
 });
-
-// function loginSubmit(){
-//     $.ajax({
-//         url: '../controllers/AdminController.php',
-//         type: 'POST',
-//         data: {
-//             action: login,
-//             username: $("#in_username").value(),
-//             password: $("#in_password").value()
-//         },
-//         success: function (data) {
-//             if(data.success){
-//                 window.location.assign('new_project.php');
-//             } else {
-//                 alert(data.err);
-//             }
-//         },
-//         error: function(err){
-//             alert('<?php echo tr("Došlo je do neočekivane greške!") ?>');
-//         }
-//     });
-// }
-

@@ -21,7 +21,7 @@
                         </div>
                         <div class="form-group">
                             <label for="in_text">Text:</label>
-                            <input type="password" class="form-control" id="in_text" name="in_text" required>
+                            <input type="text" class="form-control" id="in_text" name="in_text" required>
                         </div>
                         <br>
                         <div>

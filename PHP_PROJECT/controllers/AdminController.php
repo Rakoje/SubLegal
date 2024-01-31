@@ -1,5 +1,6 @@
 <?php
 include('../db.php');
+include('../helpers/session_config.php');
 
 $action = $_POST['action'];
 

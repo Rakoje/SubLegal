@@ -1,4 +1,4 @@
-<?php if (session_status() !== PHP_SESSION_ACTIVE) session_start(); ?>
+<?php include "session_config.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,3 +15,4 @@
     <link rel="icon" type="image" href="../assets/SS 7.png">
     <title>SubLegal</title>
 </head>
+
