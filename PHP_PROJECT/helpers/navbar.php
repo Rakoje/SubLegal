@@ -1,6 +1,11 @@
 <?php
 $admin_href = "../admin/login.php";
-if(isset($_SESSION['logged']) && $_SESSION['logged']) $admin_href = "../admin/new_project.php";
+$admin_name = "ADMIN";
+if(isset($_SESSION['logged']) && $_SESSION['logged']){
+    $admin_href = "../admin/new_project.php";
+    $admin_name = "NEW PROJECT";
+}
+
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light p-3 py-3">
@@ -29,7 +34,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']) $admin_href = "../admin/ne
                     <a class="nav-link mx-2" href="../contact/contact.php">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="<?php echo $admin_href;?>">ADMIN</a>
+                    <a class="nav-link mx-2" href="<?php echo $admin_href;?>"><?php echo $admin_name; ?></a>
                 </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
