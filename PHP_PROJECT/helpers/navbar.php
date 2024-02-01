@@ -8,9 +8,9 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
 
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light p-3 py-3 fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light p-3 py-3">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.php"><img src="../assets/SS 7.png" height="60px" alt=""><img src="../assets/text logo.png" height="60px" alt=""></a>
+        <a class="navbar-brand pl-5" href="../index.php"><img src="../assets/SS 1.png" height="160px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     <a class="nav-link mx-2" aria-current="page" href="../about/about.php">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../practice_area/practice_area.php">PRACTICE AREA</a>
+                    <a class="nav-link mx-2" href="../practice_area/practice_area.php">EXPERTISE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../projects/projects.php">PROJECTS</a>

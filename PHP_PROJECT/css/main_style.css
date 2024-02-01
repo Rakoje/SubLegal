@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
 
 body {
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: "Palatino Linotype";
 }
 
 .navbar.scrolled {
-    background-color: rgb(250, 250, 250);
+    background-color: #cbcbcb;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
 }
 
 .nav-item {
@@ -18,8 +24,6 @@ body {
     margin: 0;
     font-size: 18px;
 }
-
-
 
 .nav-link::after {
     content: '';
@@ -40,7 +44,7 @@ body {
 }
 
 footer {
-    background-color: black;
+    background-color: #4449a8;
     color: white;
 }
 
@@ -101,7 +105,7 @@ footer a:hover {
 }
 
 .home-about{
-    background-color: rgb(250, 250, 250);
+    background-color: #cbcbcb;
 }
 .home-desc {
     padding-top: 25px;
@@ -164,12 +168,72 @@ h2 {
     margin: 10px;
     min-height: 250px;
 }
-
-.card:hover {
+.card-tax-law:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background-color: #4147c0c6;
+    background: url("../assets/tax law bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
+
+.card-real-estate:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/real estate bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+.card-l-e:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/l&e bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+.card-corporate:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/corporate bg.jpeg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+
+.card-intellectual:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/intellectual bg.webp"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+.card-immigration:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/immigration bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+.card-employment:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/employment bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+.card-commercial:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: url("../assets/commercial bg.jpg"), rgba(65, 71, 192, 0.78);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: rgb(250, 250, 250);
+}
+
+
 
 .card:hover .no-hover-img{
     display: none;
@@ -196,7 +260,7 @@ h2 {
 
 .map-container {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
 }
 
 iframe {

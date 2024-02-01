@@ -24,11 +24,12 @@
                         </a>
                     </li>
                     <li><img src="../assets/footer%20mail%20w.png"><a href="mailto:office@sublegal.rs">&nbsp; office@sublegal.rs</a></li>
-                    <li><img src="../assets/footer%20call%20w.png"><a href="tel: +381111231412">&nbsp; +381 11 1234567</a></li>
+                    <li><img src="../assets/footer%20call%20w.png"><a href="tel: +381601560256">&nbsp; +381 60 156 0256</a></li>
+                    <li><img src="../assets/footer%20call%20w.png"><a href="tel: +381649355007">&nbsp; +381 64 935 5007</a></li>
                 </ul>
             </div>
             <div class="col-sm-12 text-center">
-                <p class="small text-muted mb-0">&copy; Copyrights SubLegal 2024. All rights reserved.</p>
+                <p class="small mb-0">&copy; Copyrights SubLegal 2024. All rights reserved.</p>
             </div>
             <!--<div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-3">Newsletter</h5>
