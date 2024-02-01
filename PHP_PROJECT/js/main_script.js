@@ -25,6 +25,83 @@ $(document).ready(function() {
             }
         })
     });
+
+    $("#add_project_submit").click(function(){
+        event.preventDefault(); // Prevent the default form submission
+
+        // Create FormData object to handle file uploads
+        var formData = new FormData($("#project_form")[0]);
+
+        // Convert the image to base64 and add it to formData
+        var inputFile = $("#in_picture")[0];
+        var file = inputFile.files[0];
+        formData.append("action", "add_project");
+
+        if (file) {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            reader.onload = function (e) {
+                formData.append("base64_image", e.target.result);
+
+                // Send AJAX request
+                $.ajax({
+                    url: '../controllers/AdminController.php',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        $("#success-message-add-project").text("Project added successfully")
+                        $("#project_form")[0].reset();
+                        $("#in_picture").val('');
+                    },
+                    error: function (error) {
+                        $("#error-message-add-project").text("Database Error!")
+                    }
+                });
+            };
+        } else {
+            // If no file selected, send AJAX request without the image
+            $.ajax({
+                url: '../controllers/AdminController.php',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    // Handle success response from the server
+                    console.log(response);
+                },
+                error: function (error) {
+                    // Handle error response from the server
+                    console.error(error);
+                }
+            });
+        }
+
+        // var formData = new FormData($("#project_form")[0]);
+        //
+        // $.ajax({
+        //     url: '../controllers/AdminController.php',
+        //     type: 'POST',
+        //     data: {
+        //         action: "add_project",
+        //         formData: formData
+        //     },
+        //     success: function (response) {
+        //         var data = JSON.parse(response);
+        //
+        //         if(data.success){
+        //             window.location.assign('../admin/new_project.php');
+        //         } else {
+        //             $("#error-message-login").text(data.error)
+        //         }
+        //     }
+        // })
+    });
+
+
 });
 
 $(window).scroll(function() {

@@ -73,6 +73,35 @@ footer a:hover {
     margin-top: 5px; /* Add some space between the button and the error message */
 }
 
+
+.project-card img {
+    max-width: 100%;
+    max-height: 200px; /* Set your preferred max height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.project-card:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.project-card:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#error-message-add-project {
+    color: red;
+    font-size: small;
+    margin-top: 5px; /* Add some space between the button and the error message */
+}
+
+#success-message-add-project {
+    color: green;
+    font-size: small;
+    margin-top: 5px; /* Add some space between the button and the error message */
+}
+
 .home-bg {
     background-image: url(../assets/pxfuel.jpg);
     min-height: 700px;
@@ -284,5 +313,12 @@ iframe {
 }
 
 .login-margin{
-    margin-top:100px;
+    padding-top:200px;
+}
+
+.new_project-margin{
+    padding-top:200px;
+}
+.form-field{
+    padding-bottom: 10px;
 }

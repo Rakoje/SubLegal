@@ -18,7 +18,7 @@
     </div>
     <div class="col-sm-4 text-center"><img src="../assets/person_2.jpg" alt="" class="person-img"></div>
     <div class="col-sm-8 person-text">
-        <h2>NIKOLA SUBOTIC</h2> <span>founder</span>
+        <h2>NIKOLA SUBOTIC</h2> <span>founder/attorney of law</span>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultricies augue, ut imperdiet nulla. Donec nisi
             neque, hendrerit eu magna a, lobortis molestie ligula. Fusce faucibus non erat vitae pellentesque. Cras eu pretium
@@ -31,7 +31,7 @@
     </div>
     <div class="col-sm-4 text-center"><img src="../assets/person_2.jpg" alt="" class="person-img"></div>
     <div class="col-sm-8 person-text">
-        <h2>ALEKSANDAR SUBARIC</h2> <span>founder</span>
+        <h2>ALEKSANDAR SUBARIC</h2> <span>founder/attorney of law</span>
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultricies augue, ut imperdiet nulla. Donec nisi
             neque, hendrerit eu magna a, lobortis molestie ligula. Fusce faucibus non erat vitae pellentesque. Cras eu pretium
