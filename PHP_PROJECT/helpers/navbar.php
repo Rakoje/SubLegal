@@ -8,7 +8,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
 
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light p-3 py-3">
+<nav class="navbar navbar-expand-lg navbar-light p-3 py-3 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="../index.php"><img src="../assets/SS 7.png" height="60px" alt=""><img src="../assets/text logo.png" height="60px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -28,7 +28,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     <a class="nav-link mx-2" href="../practice_area/practice_area.php">PRACTICE AREA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../contact/contact.php">PROJECTS</a>
+                    <a class="nav-link mx-2" href="../projects/projects.php">PROJECTS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../contact/contact.php">CONTACT</a>

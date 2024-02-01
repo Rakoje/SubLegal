@@ -2,12 +2,12 @@
 <body>
 <?php include('../helpers/navbar.php'); ?>
 
-<div class="container mt-5">
+<div class="container login-margin">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card-login">
                 <div class="card-header">
-                    <h5 class="card-title text-center">Login</h5>
+                    <h5 class="card-title text-center pt-1">Login</h5>
                 </div>
                 <div class="card-body">
                     <form name="login_form" id="login_form">
@@ -21,7 +21,7 @@
                         </div>
                         <br>
                         <div class="text-center">
-                            <button type="button" id="login_submit" class="btn btn-dark btn-block">Proceed</button>
+                            <button type="button" id="login_submit" class="btn-hover btn btn-dark btn-block">Proceed</button>
                         </div>
                         <div id="error-message-login"></div>
                     </form>
