@@ -6,6 +6,21 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
     $admin_name = "NEW PROJECT";
 }
 
+$language = $_SESSION['language'];
+
+if($language == "rs"){
+    $home_label = "POČETNA";
+    $about_label = "O NAMA";
+    $expertise_label = "STRUČNOST";
+    $projects_label = "PROJEKTI";
+    $contact_label = "KONTAKT";
+} else {
+    $home_label = "HOME";
+    $about_label = "ABOUT";
+    $expertise_label = "EXPERTISE";
+    $projects_label = "PROJECTS";
+    $contact_label = "CONTACT";
+}
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light p-3 py-3 text-center">
@@ -19,28 +34,28 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../index.php"><div class="x-s">HOME</div></a>
+                    <a class="nav-link mx-2" href="../index.php"><div class="x-s"><?php echo $home_label ?></div></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../about/about.php">ABOUT</a>
+                    <a class="nav-link mx-2" href="../about/about.php"><?php echo $about_label ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../practice_area/expertise.php">EXPERTISE</a>
+                    <a class="nav-link mx-2" href="../practice_area/expertise.php"><?php echo $expertise_label ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../projects/projects.php">PROJECTS</a>
+                    <a class="nav-link mx-2" href="../projects/projects.php"><?php echo $projects_label ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../contact/contact.php">CONTACT</a>
+                    <a class="nav-link mx-2" href="../contact/contact.php"><?php echo $contact_label ?></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="<?php echo $admin_href;?>"><?php echo $admin_name; ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">RS</a>
+                    <a class="nav-link mx-2" id="rs_lang" href="#">RS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">ENG</a>
+                    <a class="nav-link mx-2" id="eng_lang" href="#">ENG</a>
                 </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"

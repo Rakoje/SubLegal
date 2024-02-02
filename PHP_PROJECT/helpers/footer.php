@@ -1,3 +1,29 @@
+<?php
+
+$language = $_SESSION['language'];
+if($language == "rs"){
+    $quick_links_label = "Quick links";
+    $home_label = "Home";
+    $about_label = "About";
+    $expertise_label = "Expertise";
+    $projects_label = "Projects";
+    $contact_label = "Contact";
+    $questions_label = "Have questions?";
+    $address_label = "Zmaj Jovina 3, 11102 Belgrade";
+    $copyright_label = " Copyrights SubLegal 2024. All rights reserved";
+} else {
+    $quick_links_label = "Quick links";
+    $home_label = "Home";
+    $about_label = "About";
+    $expertise_label = "Expertise";
+    $projects_label = "Projects";
+    $contact_label = "Contact";
+    $questions_label = "Have questions?";
+    $address_label = "Zmaj Jovina 3, 11102 Belgrade";
+    $copyright_label = " Copyrights SubLegal 2024. All rights reserved";
+}
+?>
+
 <footer class="w-100 py-4 flex-shrink-0">
     <div class="container py-4">
         <div class="row gy-4 gx-5">
@@ -7,20 +33,20 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
-                <h4 class="text-white mb-3">Quick links</h4>
+                <h4 class="text-white mb-3"><?php echo $quick_links_label ?></h4>
                 <ul class="list-unstyled text-muted">
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a href="../about/about.php">About</a></li>
-                    <li><a href="../practice_area/expertise.php">Expertise</a></li>
-                    <li><a href="../projects/projects.php">Projects</a></li>
-                    <li><a href="../contact/contact.php">Contact</a></li>
+                    <li><a href="../index.php"><?php echo $home_label ?></a></li>
+                    <li><a href="../about/about.php"><?php echo $about_label ?></a></li>
+                    <li><a href="../practice_area/expertise.php"><?php echo $expertise_label ?></a></li>
+                    <li><a href="../projects/projects.php"><?php echo $projects_label ?></a></li>
+                    <li><a href="../contact/contact.php"><?php echo $contact_label ?></a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">
-                <h4 class="text-white mb-3">Have questions?</h4>
+                <h4 class="text-white mb-3"><?php echo $questions_label ?></h4>
                 <ul class="list-unstyled text-muted">
                     <li><img src="../assets/footer%20address%20w.png"><a href="https://maps.app.goo.gl/kFwjXo4EyHMxNSvM9" target="_blank">
-                            &nbsp;Zmaj Jovina 3, 11102 Belgrade
+                            &nbsp;<?php echo $address_label ?>
                         </a>
                     </li>
                     <li><img src="../assets/footer%20mail%20w.png"><a href="mailto:office@sublegal.rs">&nbsp; office@sublegal.rs</a></li>
@@ -29,7 +55,7 @@
                 </ul>
             </div>
             <div class="col-sm-12 text-center">
-                <p class="small mb-0">&copy; Copyrights SubLegal 2024. All rights reserved.</p>
+                <p class="small mb-0">&copy; <?php echo $copyright_label ?></p>
             </div>
             <!--<div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-3">Newsletter</h5>

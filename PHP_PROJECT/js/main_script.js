@@ -26,6 +26,41 @@ $(document).ready(function() {
         })
     });
 
+    $("#rs_lang").click(function(){
+        $.ajax({
+            url: '../controllers/GeneralController.php',
+            type: 'POST',
+            data: {
+                language: "rs",
+                action: "changeLanguage"
+            },
+            success: function (response) {
+                alert(response);
+                location.reload();
+            },
+            error: function (error) {
+                $("#error-message-add-project").text("Database Error!")
+            }
+        });
+    })
+
+    $("#eng_lang").click(function(){
+        $.ajax({
+            url: '../controllers/GeneralController.php',
+            type: 'POST',
+            data: {
+                language: "eng",
+                action: "changeLanguage"
+            },
+            success: function (response) {
+                location.reload();
+            },
+            error: function (error) {
+                $("#error-message-add-project").text("Database Error!")
+            }
+        });
+    })
+
     $("#add_project_submit").click(function(){
         event.preventDefault(); // Prevent the default form submission
 

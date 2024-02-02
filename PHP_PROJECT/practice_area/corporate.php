@@ -1,12 +1,21 @@
 <?php include('../helpers/header.php'); ?>
 <body>
 <?php include('../helpers/navbar.php'); ?>
+<?php
+$language = $_SESSION['language'];
+
+if($language == "rs"){
+    $title = "CORPORATE & M&A";
+} else {
+    $title = "CORPORATE & M&A";
+}
+?>
 
 <div class="row home-bg">
     <div class="col-sm-12">
         <div class="home-header">
             <div class="bottom-to-top-text head-home">
-                CORPORATE & M&A
+                <?php echo $title;?>
             </div>
         </div>
     </div>

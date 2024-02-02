@@ -68,9 +68,16 @@
 
 <?php
 }else{
+    $language = $_SESSION['language'];
+
+    if($language == "rs"){
+        $no_rights_label  = "Nemate prava za pristup ovoj stranici!";
+    } else {
+        $no_rights_label  = "You do not have the rights to access this page!";
+    }
 ?>
 <div id="access_error_div">
-    <h3>You do not have the rights to access this page!</h3>
+    <h3><?php echo $no_rights_label?></h3>
 </div>
 <?php } ?>
 <?php include('../helpers/footer.php');?>
