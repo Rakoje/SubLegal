@@ -25,7 +25,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
                     <a class="nav-link mx-2" href="../about/about.php">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../practice_area/practice_area.php">EXPERTISE</a>
+                    <a class="nav-link mx-2" href="../practice_area/expertise.php">EXPERTISE</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../projects/projects.php">PROJECTS</a>

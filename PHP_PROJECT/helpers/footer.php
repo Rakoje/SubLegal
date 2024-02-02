@@ -11,7 +11,7 @@
                 <ul class="list-unstyled text-muted">
                     <li><a href="../index.php">Home</a></li>
                     <li><a href="../about/about.php">About</a></li>
-                    <li><a href="../practice_area/practice_area.php">Expertise</a></li>
+                    <li><a href="../practice_area/expertise.php">Expertise</a></li>
                     <li><a href="../projects/projects.php">Projects</a></li>
                     <li><a href="../contact/contact.php">Contact</a></li>
                 </ul>
