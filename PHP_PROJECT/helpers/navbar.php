@@ -36,6 +36,12 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="<?php echo $admin_href;?>"><?php echo $admin_name; ?></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">RS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="#">ENG</a>
+                </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
