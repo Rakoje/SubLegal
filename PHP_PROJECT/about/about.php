@@ -12,7 +12,7 @@
 </div>
 <div class="row home-about">
     <div class="col-sm-12 home-desc">
-        <h1 class="text-center"><b>OUR ATTORNEYS</b></h1>
+        <h1 class="text-center"><b>FOUNDERS</b></h1>
         <br>
         <br>
     </div>
@@ -43,6 +43,28 @@
             quis, mattis mauris. Suspendisse vitae mauris ornare, cursus massa at, facilisis enim.</p>
     </div>
 </div>
+<div class="row home-about">
+    <div class="col-sm-12 home-desc text-center">
+        <h1 class="text-center"><b>OUR TEAM</b></h1>
+        Choose Your desired expertise to get the know Your contact:
+    </div>
+    <div class="col-sm-4 text-center"></div>
+    <div class="col-sm-4 text-center p-4">
+        <select class="form-select pointer-option" id="page_selector" aria-label="example" onchange="navigateToSelectedPage()">
+            <option selected disabled>Choose expertise:</option>
+            <option value="1">Construction & Real Estate</option>
+            <option value="2">Corporate & M&A</option>
+            <option value="3">Commercial</option>
+            <option value="4">Tax Law</option>
+            <option value="5">Immigration</option>
+            <option value="6">Intellectual Property</option>
+            <option value="7">Employment</option>
+            <option value="8">Litigation & Enforcement</option>
+        </select>
+    </div>
+    <div class="col-sm-4 text-center"></div>
+</div>
+
 <?php include('../helpers/footer.php');?>
 </body>
 

@@ -111,3 +111,14 @@ $(window).scroll(function() {
         $('.navbar').removeClass('scrolled');
     }
 });
+
+function navigateToSelectedPage() {
+    var selectElement = document.getElementById("page_selector");
+    var selectedValue = selectElement.value;
+
+    // Check if a valid option is selected
+    if (selectedValue) {
+        // Navigate to the selected page
+        window.location.href = "../under_construction/under_construction.php";
+    }
+}

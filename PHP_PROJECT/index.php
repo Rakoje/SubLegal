@@ -7,10 +7,10 @@
         <div class="home-header">
             <div class="bottom-to-top-text head-home">
                 WE FIGHT FOR YOUR JUSTICE
-                <div class="subhead-home">
+                <!--<div class="subhead-home">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facere officiis in quo,
                     corporis quasi.
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
