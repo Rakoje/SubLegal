@@ -51,11 +51,12 @@ if($language == "rs"){
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="<?php echo $admin_href;?>"><?php echo $admin_name; ?></a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link mx-2" id="rs_lang" href="#">RS</a>
+                    <a class="nav-link mx-2" style="<?php if($language == "rs"){ echo 'display:none';} ?>" id="rs_lang" href="#">RS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" id="eng_lang" href="#">ENG</a>
+                    <a class="nav-link mx-2" style="<?php if($language == "eng"){ echo 'display:none';} ?>" id="eng_lang" href="#">ENG</a>
                 </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"

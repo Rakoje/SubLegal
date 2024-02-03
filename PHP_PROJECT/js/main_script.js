@@ -35,7 +35,8 @@ $(document).ready(function() {
                 action: "changeLanguage"
             },
             success: function (response) {
-                alert(response);
+                $("#eng_lang").show();
+                $("#rs_lang").hide();
                 location.reload();
             },
             error: function (error) {
@@ -53,6 +54,8 @@ $(document).ready(function() {
                 action: "changeLanguage"
             },
             success: function (response) {
+                $("#rs_lang").show();
+                $("#eng_lang").hide();
                 location.reload();
             },
             error: function (error) {
