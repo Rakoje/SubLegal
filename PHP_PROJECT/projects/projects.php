@@ -4,7 +4,7 @@
 <?php
 include('../db.php');
 $res = $pdo->query("
-        SELECT image, content_eng, title_eng, DATE_FORMAT(date, '%d.%m.%Y') date FROM project
+        SELECT image, content_eng, title_eng, content_srb, title_srb, DATE_FORMAT(date, '%d.%m.%Y') date FROM project
         ORDER BY date DESC
         LIMIT 5 ")->fetchAll();
 
@@ -29,21 +29,19 @@ if($language == "rs"){
     <div class="row ">
         <div class="col-sm-12">
             <h1 class="home-desc text-center"><b>LATEST PROJECTS</b></h1>
-            <br>
-            <br>
         <!-- Project Cards -->
             <?php foreach($res as $row){
                 if($language == "rs"){ ?>
-                <div class="card mb-3 project-card">
+                <div class="card m-3 project-card">
                     <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $row['title_rs'] ?></h5>
+                        <h5 class="card-title"><?php echo $row['title_srb'] ?></h5>
                         <p class="card-text"><small class="text-muted"><?php echo $row['date'] ?></small></p>
-                        <p class="card-text"><?php echo $row['content_rs'] ?></p>
+                        <p class="card-text"><?php echo $row['content_srb'] ?></p>
                     </div>
                 </div>
             <?php } else { ?>
-                <div class="card mb-3 project-card">
+                <div class="card m-3 project-card">
                     <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $row['title_eng'] ?></h5>
