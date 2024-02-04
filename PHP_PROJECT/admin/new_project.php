@@ -5,8 +5,7 @@
 <?php
     if(isset($_SESSION['logged']) && $_SESSION['logged']){
 ?>
-
-        <div class="container mt-5 new_project-margin">
+        <div class="container new_project-margin">
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card">

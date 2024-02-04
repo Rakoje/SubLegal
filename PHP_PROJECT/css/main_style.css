@@ -8,6 +8,7 @@ body h1, h2, h3, h4, h5, h6, .nav-link{
 body{
     font-family: "Raleway";
     overflow-x: hidden;
+    background-color: #cbcbcb;
 }
 
 .navbar.scrolled {
@@ -196,6 +197,7 @@ h2 {
     padding: 10px;
     margin: 10px;
     min-height: 250px;
+    background-color: white;
 }
 
 .card-contact {

@@ -1,17 +1,21 @@
 <?php
 $admin_href = "../admin/login.php";
 $admin_name = "ADMIN";
+$language = $_SESSION['language'];
 if(isset($_SESSION['logged']) && $_SESSION['logged']){
     $admin_href = "../admin/new_project.php";
-    $admin_name = "NEW PROJECT";
+    if($language == "rs") {
+        $admin_name = "NOVI PROJEKAT";
+    } else {
+        $admin_name = "NEW PROJECT";
+    }
 }
 
-$language = $_SESSION['language'];
 
 if($language == "rs"){
     $home_label = "POČETNA";
     $about_label = "O NAMA";
-    $expertise_label = "STRUČNOST";
+    $expertise_label = "EKSPERTIZA";
     $projects_label = "PROJEKTI";
     $contact_label = "KONTAKT";
 } else {
