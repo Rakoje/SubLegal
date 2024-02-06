@@ -2,11 +2,9 @@
 <body>
 <?php include('../helpers/navbar.php'); ?>
 
-<?php
-    if(isset($_SESSION['logged']) && $_SESSION['logged']){
-?>
         <div class="container new_project-margin">
             <div class="row justify-content-center">
+                <?php if(isset($_SESSION['logged']) && $_SESSION['logged']){ ?>
                 <div class="col-md-6">
                     <div class="card-project">
                         <div class="card-header">
@@ -62,23 +60,21 @@
                         </div>
                     </div>
                 </div>
+                    <?php }else{
+                        $language = $_SESSION['language'];
+
+                        if($language == "rs"){
+                            $no_rights_label  = "Nemate prava za pristup ovoj stranici!";
+                        } else {
+                            $no_rights_label  = "You do not have the rights to access this page!";
+                        }
+                        ?>
+                        <div id="access_error_div">
+                            <h3><?php echo $no_rights_label?></h3>
+                        </div>
+                <?php  } ?>
             </div>
         </div>
-
-<?php
-}else{
-    $language = $_SESSION['language'];
-
-    if($language == "rs"){
-        $no_rights_label  = "Nemate prava za pristup ovoj stranici!";
-    } else {
-        $no_rights_label  = "You do not have the rights to access this page!";
-    }
-?>
-<div id="access_error_div">
-    <h3><?php echo $no_rights_label?></h3>
-</div>
-<?php } ?>
 <?php include('../helpers/footer.php');?>
 </body>
 </html>
