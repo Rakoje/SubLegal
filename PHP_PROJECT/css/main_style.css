@@ -6,7 +6,7 @@ body h1, h2, h3, h4, h5, h6, .nav-link{
 }
 
 body{
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     overflow-x: hidden;
     background-color: #cbcbcb;
 }
@@ -146,8 +146,8 @@ footer a:hover {
 }
 
 .who-are-we{
-    background-image: url(../assets/corporate_bg.jpeg);
-    background-position: center;
+    background-image: url("../assets/razlike_bg.jpg");
+    background-position: 25% 70%;
     background-repeat: no-repeat;
     background-size: 1200px;
     margin-right: 20vw;
@@ -188,7 +188,7 @@ footer a:hover {
 .home-box-text{
     max-width: 600px;
     padding: 3vw;
-    background-color: white;
+    background-color: #cbcbcb;
     animation: slideIn 1s ease;
     border-radius: 5px;
     margin: 35vh 10vw 10vw;
@@ -197,7 +197,7 @@ footer a:hover {
 .distinct-box-text{
     max-width: 600px;
     padding: 3vw;
-    background-color: white;
+    background-color: #cbcbcb;
     animation: slideIn 1s ease;
     border-radius: 5px;
     margin: 15vh 50vw 10vw;
@@ -236,10 +236,21 @@ footer a:hover {
     animation: slideIn 1s ease;
 }
 
+.employ-img{
+    display: block;
+    position:absolute;
+    margin-top: 25vh;
+    margin-left: 7vw;
+    height: auto;
+    width: 65%;
+    z-index: -1;
+    animation: slideIn 1s ease;
+}
+
 .l-and-e-img{
     display: block;
     position:absolute;
-    margin-top: 5vh;
+    margin-top: 25vh;
     margin-left: 10vw;
     height: auto;
     width: 50%;
@@ -250,16 +261,16 @@ footer a:hover {
 .tax-box-text{
     max-width: 900px;
     padding: 3vw;
-    background-color: rgb(250, 250, 250);
+    background-color: #cbcbcb;
     animation: slideInRight 1s ease;
     border-radius: 5px;
-    margin: 45vh 35vw 10vw;
+    margin: 70vh 40vw 10vw;
 }
 
 .real-estate-box-text{
-    max-width: 600px;
+    max-width: 750px;
     padding: 3vw;
-    background-color: rgb(250, 250, 250);
+    background-color: #cbcbcb;
     animation: slideInRight 1s ease;
     border-radius: 5px;
     margin: 40vh 40vw 10vw;
@@ -268,7 +279,7 @@ footer a:hover {
 .intellectual-box-text{
     max-width: 900px;
     padding: 3vw;
-    background-color: rgb(250, 250, 250);
+    background-color: #cbcbcb;
     animation: slideInRight 1s ease;
     border-radius: 5px;
     margin: 80vh 35vw 10vw;
@@ -328,7 +339,8 @@ footer a:hover {
     }
 
     .tax-law-img,
-    .l-and-e-img{
+    .l-and-e-img,
+    .employ-img{
         margin: 120px 0 0;
         width: 100%;
         height: auto;
@@ -368,7 +380,7 @@ footer a:hover {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: #ffffff;
+    background-color: #eeeeee;
     color: black;
     padding: 20px;
     min-width: 300px;
@@ -634,4 +646,13 @@ iframe {
     background-position: center;
 
     background-blend-mode: multiply;
+}
+
+#hover_white a{
+    color: black;
+    text-decoration: none;
+}
+
+#hover_white:hover a{
+    color: white;
 }

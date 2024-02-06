@@ -192,3 +192,75 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(targetDiv);
     }
 });
+
+function reChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/apartment_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function reRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/apartment_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+
+function coChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/account_balance_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function coRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+
+function taxChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/balance_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function taxRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/balance_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+function imChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/luggage_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function imRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/luggage_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+function intChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/copyright_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function intRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/copyright_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+function emChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/badge_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function emRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/badge_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+function leChange(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/gavel_FILL0_wght400_GRAD200_opsz48 belo.png'; // Replace with the path to the new image
+}
+
+function leRestore(element) {
+    var image = element.querySelector('img');
+    image.src = '../assets/gavel_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}

@@ -34,10 +34,7 @@ if ($language == "rs") {
     <div class="col-sm-12 home-box-text">
         <div class="d-flex"><h1>KONTAKT</h1></div>
         <br>
-        <div> Vaši pravni izazovi su naša strast. U SubLegal-u, posvećeni smo pružanju vrhunskih pravnih usluga uz
-            pažljivu pažnju prema individualnim potrebama naših klijenata. Bez obzira da li se suočavate sa pitanjima
-            poslovnog prava, imovinskih transakcija ili radnih odnosa, naš tim stručnjaka je
-            spreman da vam pruži jasne i efikasne pravne savete.
+        <div>
         </div>
         <br>
         <div>

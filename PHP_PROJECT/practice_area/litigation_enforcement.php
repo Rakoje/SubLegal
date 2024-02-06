@@ -43,12 +43,44 @@ if ($language == "rs") {
                 <li>Savetovanje i zastupanje u izvršnim postupcima</li>
             </ul>
         </div>
-            <br>
-        <div>
-            <a href="expertise.php#dalje" style="text-decoration: none"> - OSTALE USLUGE </a>
+        <br>
+        <div class="row">
+            <div class="col-sm-6" onmouseover="reChange(this)" onmouseout="reRestore(this)"  id="hover_white">
+                <a href="real_estate.php">
+                    <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
+                         alt="">Nepokretnost i izgradnja</a>
+            </div>
+            <div class="col-sm-6"  onmouseover="coChange(this)" onmouseout="coRestore(this)"  id="hover_white">
+                <a href="corporate.php">
+                    <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
+                         alt="">Korporativno i provredno pravo</a><br>
+            </div>
+            <div class="col-sm-6"  onmouseover="taxChange(this)" onmouseout="taxRestore(this)"  id="hover_white">
+                <a href="tax_law.php" >
+                    <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
+                    Poresko pravo</a><br>
+            </div>
+            <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
+                <a href="immigration.php">
+                    <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
+                    Imigracija</a><br>
+            </div>
+            <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
+                <a href="intellectual.php">
+                    <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
+                         alt="">Intelektualna svojina</a><br>
+            </div>
+            <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
+                <a href="employment.php">
+                    <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
+                    Radni odnosi</a><br>
+            </div>
+            <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
+                <a href="litigation_enforcement.php">
+                    <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
+                    Parnični i izvršni postupci</a><br></div>
         </div>
     </div>
-</div>
 </div><?php include('../helpers/footer.php'); ?>
 </body>
 

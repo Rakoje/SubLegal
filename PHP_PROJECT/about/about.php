@@ -7,7 +7,7 @@ $language = $_SESSION['language'];
 
 if ($language == "rs") {
     $title_label = "O NAMA";
-    $founders_label = "OSNIVAČI";
+    $founders_label = "TIM";
     $attorney_of_law_label = "osnivač/advokat";
     $subo_text = "Nikola je  jedan od osnivača SubLegal advokatske kancelarije i konsultantske kuće i poseduje višegodišnje iskustvo 
     u zastupanju klijenata kako u Republici Srbiji tako i u Crnoj Gori.

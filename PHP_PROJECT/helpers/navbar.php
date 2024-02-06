@@ -38,14 +38,15 @@ if($language == "rs"){
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../about/about.php"><?php echo $about_label ?></a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link mx-2" href="../practice_area/expertise.php"><?php echo $expertise_label ?></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../projects/projects.php"><?php echo $projects_label ?></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-2" href="../about/about.php"><?php echo $about_label ?></a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../contact/contact.php"><?php echo $contact_label ?></a>
                 </li>
