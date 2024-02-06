@@ -69,14 +69,16 @@ if ($language == "rs") {
             <div class="founder-text-box">
                 <h3>ALEKSANDAR ŠUBARIĆ</h3>
                 <p>advokat</p>
+                <a href="about/about.php#subara" style="text-decoration: none; text-align: right">DETALJI</a>
             </div>
         </div>
         <div class="col-sm-6 smt">
             <br>
-            <img src="../assets/subara.jpg" alt="" class="person-img img-fluid">
+            <img src="../assets/subo.jpg" alt="" class="person-img img-fluid">
             <div class="founder-text-box">
                 <h3>NIKOLA SUBOTIĆ</h3>
                 <p>advokat</p>
+                <a href="about/about.php#subo" style="text-decoration: none; text-align: right">DETALJI</a>
             </div>
         </div>
     </div>

@@ -146,7 +146,7 @@ footer a:hover {
 }
 
 .who-are-we{
-    background-image: url(../assets/handshake.jpg);
+    background-image: url(../assets/corporate_bg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1200px;
@@ -424,7 +424,7 @@ h2 {
     transition: 0.3s;
     padding: 10px;
     margin: 10px;
-    height: 350px;
+    height: 310px;
 }
 
 .project-card{

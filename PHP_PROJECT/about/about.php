@@ -11,15 +11,15 @@ if ($language == "rs") {
     $attorney_of_law_label = "osnivač/advokat";
     $subo_text = "Nikola je  jedan od osnivača SubLegal advokatske kancelarije i konsultantske kuće i poseduje višegodišnje iskustvo 
     u zastupanju klijenata kako u Republici Srbiji tako i u Crnoj Gori.
-<br><br><br>Redovno savetuje klijente u oblasti korporativnog, privrednog kao I poreskog prava.  
+<br><br><br>Redovno savetuje klijente u oblasti korporativnog, privrednog kao i poreskog prava.  
 Posebno je prepoznat po svom pragmatičnom pristupu problemima odnosno rešenjima sa 
 akcentom na postupcima koji se tiču nepokretnosti, složenim građevinskim sporovima, 
-privrednim sporovima I imigracionim postupcima. 
+privrednim sporovima i imigracionim postupcima. 
 <br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda. 
 <br><br><a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>nikola@sublegal.rs</a>
 ";
     $subara_text = "Dugogodišnji je advokat i jedan je od osnivača SubLegal advokatske kancelarije i konsultantske kuće. 
-<br><br><br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz satupanje velikih firmi i grupacija koje posluju na teritoriji Zapadnog Balkana. Sa posebnim akcentom na razvoj poslovanja, učestvovao je u mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine, distribucija, avioindustrija, transport, retail i prehrambena industrija.
+<br><br><br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz zastupanje velikih firmi i grupacija koje posluju na teritoriji Zapadnog Balkana. Sa posebnim akcentom na razvoj poslovanja, učestvovao je u mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine, distribucija, avioindustrija, transport, retail i prehrambena industrija.
 <br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
 <br><br><a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>aleksandar@sublegal.rs</a> 
 ";
@@ -86,13 +86,13 @@ privrednim sporovima I imigracionim postupcima.
     </div>
     <div class="col-sm-4 text-center"><img src="../assets/subara.jpg" alt=""
                                                              class="person-img img-fluid"></div>
-    <div class="col-sm-8 person-text">
+    <div class="col-sm-8 person-text" id="subara">
         <h2>ALEKSANDAR ŠUBARIĆ</h2> <span><?php echo $attorney_of_law_label; ?></span>
         <hr>
         <p><?php echo $subara_text; ?></p>
     </div>
-    <div class="col-sm-4 text-center"><img src="../assets/person_2.jpg" alt="" class="person-img img-fluid"></div>
-    <div class="col-sm-8 person-text">
+    <div class="col-sm-4 text-center"><img src="../assets/subo.jpg" alt="" class="person-img img-fluid"></div>
+    <div class="col-sm-8 person-text" id="subo">
         <h2>NIKOLA SUBOTIĆ</h2> <span><?php echo $attorney_of_law_label; ?></span>
         <hr>
         <p><?php echo $subo_text; ?></p>

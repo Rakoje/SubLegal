@@ -148,7 +148,7 @@ if ($language == "rs") {
             </div>
         </div>
     </div>
-    <div class="col-sm-12">
+    <div class="col-sm-12 pb-3">
         <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2">
             <div class="col-sm-3">
                 <div class="card card-intellectual">

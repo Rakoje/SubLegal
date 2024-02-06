@@ -36,7 +36,7 @@ if ($language == "rs") {
         <br>
         <div> Vaši pravni izazovi su naša strast. U SubLegal-u, posvećeni smo pružanju vrhunskih pravnih usluga uz
             pažljivu pažnju prema individualnim potrebama naših klijenata. Bez obzira da li se suočavate sa pitanjima
-            poslovnog prava, imovinskih transakcija, radnih odnosa ili porodičnih pravnih pitanja, naš tim stručnjaka je
+            poslovnog prava, imovinskih transakcija ili radnih odnosa, naš tim stručnjaka je
             spreman da vam pruži jasne i efikasne pravne savete.
         </div>
         <br>

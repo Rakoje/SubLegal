@@ -61,7 +61,7 @@ if ($language == "rs") {
         </div>
         <br>
         <div>
-            <a href="expertise.php" style="text-decoration: none"> - OSTALE USLUGE </a>
+            <a href="expertise.php#dalje" style="text-decoration: none"> - OSTALE USLUGE </a>
         </div>
     </div>
 </div>
