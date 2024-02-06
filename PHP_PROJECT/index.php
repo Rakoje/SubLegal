@@ -60,9 +60,9 @@ if ($language == "rs") {
         </div>
     </div>
 </div>
-<div class="row home-about home-desc animated-div" id="targetDiv2">
-    <h1 class="text-center">UPOZNAJTE OSNIVAČE</h1>
-    <div class="row d-flex justify-content-center">
+<div class="row home-about home-desc">
+    <div class="row d-flex justify-content-center animated-div"  id="targetDiv2">
+        <h1 class="text-center">UPOZNAJTE OSNIVAČE</h1>
         <div class="col-sm-6 smt">
             <br>
             <img src="../assets/subara.jpg" alt="" class="person-img img-fluid">

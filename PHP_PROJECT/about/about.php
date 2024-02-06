@@ -9,14 +9,15 @@ if ($language == "rs") {
     $title_label = "O NAMA";
     $founders_label = "OSNIVAČI";
     $attorney_of_law_label = "osnivač/advokat";
-    $subo_text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultricies augue, ut imperdiet nulla. Donec nisi
-            neque, hendrerit eu magna a, lobortis molestie ligula. Fusce faucibus non erat vitae pellentesque. Cras eu pretium
-            lacus. Ut vitae justo vitae felis molestie tempus. Nullam ac tincidunt velit, in porta metus. Proin at erat vel mauris
-            sollicitudin efficitur vitae id nisi. Vestibulum id lectus imperdiet, congue nulla non, porta tellus. Donec scelerisque
-            finibus tellus, et blandit justo accumsan eget. Fusce laoreet arcu sem, a efficitur justo tempus id. Maecenas in enim id
-            nulla interdum interdum non sit amet nisi. Praesent pellentesque pretium placerat. Integer fermentum, risus in
-            vestibulum luctus, metus lacus volutpat ligula, et hendrerit leo felis vel lacus. Sed vel nunc tincidunt, bibendum erat
-            quis, mattis mauris. Suspendisse vitae mauris ornare, cursus massa at, facilisis enim.";
+    $subo_text = "Nikola je  jedan od osnivača SubLegal advokatske kancelarije i konsultantske kuće i poseduje višegodišnje iskustvo 
+    u zastupanju klijenata kako u Republici Srbiji tako i u Crnoj Gori.
+<br><br><br>Redovno savetuje klijente u oblasti korporativnog, privrednog kao I poreskog prava.  
+Posebno je prepoznat po svom pragmatičnom pristupu problemima odnosno rešenjima sa 
+akcentom na postupcima koji se tiču nepokretnosti, složenim građevinskim sporovima, 
+privrednim sporovima I imigracionim postupcima. 
+<br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda. 
+<br><br><a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>nikola@sublegal.rs</a>
+";
     $subara_text = "Dugogodišnji je advokat i jedan je od osnivača SubLegal advokatske kancelarije i konsultantske kuće. 
 <br><br><br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz satupanje velikih firmi i grupacija koje posluju na teritoriji Zapadnog Balkana. Sa posebnim akcentom na razvoj poslovanja, učestvovao je u mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine, distribucija, avioindustrija, transport, retail i prehrambena industrija.
 <br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
@@ -73,23 +74,24 @@ if ($language == "rs") {
         </div>
         <br>
         <div>
-            <a href="#dalje" style="text-decoration: none"> - NAŠ TIM</a>
+            <a href="#targetDiv" style="text-decoration: none"> - NAŠ TIM</a>
         </div>
     </div>
 </div>
-<div class="row home-about" id="dalje">
+<div class="row home-about" id="targetDiv">
     <div class="col-sm-12 home-desc">
         <h1 class="text-center"><b><?php echo $founders_label; ?></b></h1>
         <br>
         <br>
     </div>
-    <div class="col-sm-4 d-flex justify-content-center"><img src="../assets/subara.jpg" alt="" class="person-img img-fluid"></div>
+    <div class="col-sm-4 text-center"><img src="../assets/subara.jpg" alt=""
+                                                             class="person-img img-fluid"></div>
     <div class="col-sm-8 person-text">
         <h2>ALEKSANDAR ŠUBARIĆ</h2> <span><?php echo $attorney_of_law_label; ?></span>
         <hr>
         <p><?php echo $subara_text; ?></p>
     </div>
-    <div class="col-sm-4 text-center"><img src="../assets/person_2.jpg" alt="" class="person-img"></div>
+    <div class="col-sm-4 text-center"><img src="../assets/person_2.jpg" alt="" class="person-img img-fluid"></div>
     <div class="col-sm-8 person-text">
         <h2>NIKOLA SUBOTIĆ</h2> <span><?php echo $attorney_of_law_label; ?></span>
         <hr>
@@ -97,7 +99,7 @@ if ($language == "rs") {
     </div>
 </div>
 <div class="row home-about">
-    <div class="col-sm-12 home-desc text-center">
+    <div class="col-sm-12 home-desc text-center animated-div" id="targetDiv2">
         <h1 class="text-center"><b><?php echo $our_team_label; ?></b></h1>
         <?php echo $our_team_desc; ?>
     </div>

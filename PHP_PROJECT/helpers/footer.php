@@ -2,15 +2,15 @@
 
 $language = $_SESSION['language'];
 if($language == "rs"){
-    $quick_links_label = "Quick links";
-    $home_label = "Home";
-    $about_label = "About";
-    $expertise_label = "Expertise";
-    $projects_label = "Projects";
-    $contact_label = "Contact";
-    $questions_label = "Have questions?";
+    $quick_links_label = "Navigacija";
+    $home_label = "Početna";
+    $about_label = "Naš tim";
+    $expertise_label = "Ekspertiza";
+    $projects_label = "Projekti";
+    $contact_label = "Kontakt";
+    $questions_label = "Imate pitanja?";
     $address_label = "Zmaj Jovina 3, 11102 Belgrade";
-    $copyright_label = " Copyrights SubLegal 2024. All rights reserved";
+    $copyright_label = " Copyrights SubLegal 2024. Sva prava zadržana.";
 } else {
     $quick_links_label = "Quick links";
     $home_label = "Home";

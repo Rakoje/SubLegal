@@ -6,16 +6,16 @@
     $language = $_SESSION['language'];
 
     if($language == "rs"){
-        $label = "UNDER CONSTRUCTION";
-    } else {
         $label = "U IZRADI";
+    } else {
+        $label = "UNDER CONSTRUCTION";
     }
 ?>
 
-<div class="row home-bg">
+<div class="row construction-bg">
     <div class="col-sm-12">
-        <div class="home-header">
-            <div class="bottom-to-top-text head-home">
+        <div class="home-header d-flex justify-content-center">
+            <div class="head-home" style="color: white">
                 <?php echo $label; ?>
             </div>
         </div>

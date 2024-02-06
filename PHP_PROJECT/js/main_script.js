@@ -163,28 +163,32 @@ function navigateToSelectedPage() {
 document.addEventListener('DOMContentLoaded', function() {
     const targetDiv = document.getElementById('targetDiv');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
+    if(targetDiv !== null){
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
 
-    observer.observe(targetDiv);
+        observer.observe(targetDiv);
+    }
 });
 document.addEventListener('DOMContentLoaded', function() {
     const targetDiv = document.getElementById('targetDiv2');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
+    if(targetDiv !== null){
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
 
-    observer.observe(targetDiv);
+        observer.observe(targetDiv);
+    }
 });
