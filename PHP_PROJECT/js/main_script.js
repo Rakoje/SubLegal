@@ -45,23 +45,6 @@ $(document).ready(function() {
         });
     })
 
-    $("#logout-btn").click(function(){
-        $.ajax({
-            url: '../controllers/GeneralController.php',
-            type: 'POST',
-            data: {
-                action: "logout"
-            },
-            success: function (response) {
-                alert("Logout successful!");
-                location.reload();
-            },
-            error: function (error) {
-                alert("Error!");
-            }
-        });
-    })
-
     $("#eng_lang").click(function(){
         $.ajax({
             url: '../controllers/GeneralController.php',
