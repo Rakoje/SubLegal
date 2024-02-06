@@ -11,22 +11,36 @@ body{
     background-color: #cbcbcb;
 }
 
-.navbar.scrolled {
-    background-color: #cbcbcb;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+img{
+    border-radius: 5px;
 }
 
 .navbar{
     position: absolute;
     width: 100%;
-    background: linear-gradient(#4147c070, #4147c000);
+    z-index: 2;
+}
+
+#mobile-navbar{
+    background-color: #fafafa;
+}
+
+#overlay-on-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(250, 250, 250, 0.97);
+    z-index: 1;
 }
 
 .nav-item {
     font-weight: 700;
     display: inline-block;
     position: relative;
-    color: black;
+    color: white;
     padding-right: 10px;
     margin: 0;
     font-size: 18px;
@@ -110,11 +124,29 @@ footer a:hover {
 }
 
 .home-bg {
-    background-image: url(../assets/pxfuel.jpg);
+    background-image: url(../assets/Pocetna.jpg);
     min-height: 700px;
+    width: 100%;
     background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.who-are-we{
+    background-image: url(../assets/handshake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    margin-right: 20vw;
+}
+
+.about-bg{
+    background-image: url(../assets/o_nama.jpg);
+    min-height: 700px;
+    width: 100%;
+    background-position: center;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-color: #cbcbcb;
 }
 
 .subhead-home {
@@ -122,28 +154,163 @@ footer a:hover {
     font-weight: 100;
 }
 
-.home-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
+.home-box-text{
+    max-width: 600px;
+    padding: 3vw;
+    background-color: white;
+    animation: slideIn 1s ease;
+    border-radius: 5px;
+    margin: 40vh 10vw 10vw;
+}
+
+.distinct-box-text{
+    max-width: 600px;
+    padding: 3vw;
+    background-color: white;
+    animation: slideIn 1s ease;
+    border-radius: 5px;
+    margin: 15vh 50vw 10vw;
+}
+
+.animated-div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.real-estate-img{
+    display: block;
+    position:absolute;
+    margin-top: 30vh;
+    margin-left: 10vw;
+    height: auto;
+    width: 50%;
+    z-index: -1;
+    animation: slideIn 1s ease;
+}
+
+.tax-law-img{
+    display: block;
+    position:absolute;
+    margin-top: 25vh;
+    margin-left: 7vw;
+    height: auto;
+    width: 75%;
+    z-index: -1;
+    animation: slideIn 1s ease;
+}
+
+.l-and-e-img{
+    display: block;
+    position:absolute;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    height: auto;
+    width: 50%;
+    z-index: -1;
+    animation: slideIn 1s ease;
+}
+
+.tax-box-text{
+    max-width: 900px;
+    padding: 3vw;
+    background-color: rgb(250, 250, 250);
+    animation: slideInRight 1s ease;
+    border-radius: 5px;
+    margin: 45vh 35vw 10vw;
+}
+
+.real-estate-box-text{
+    max-width: 600px;
+    padding: 3vw;
+    background-color: rgb(250, 250, 250);
+    animation: slideInRight 1s ease;
+    border-radius: 5px;
+    margin: 40vh 40vw 10vw;
+}
+
+.intellectual-box-text{
+    max-width: 900px;
+    padding: 3vw;
+    background-color: rgb(250, 250, 250);
+    animation: slideInRight 1s ease;
+    border-radius: 5px;
+    margin: 80vh 35vw 10vw;
+}
+
+@media screen and (min-width: 1030px) {
+    /* On desktop, move the background image 25% to the right */
+    .home-bg{
+        background-position: 270% center;
+    }
+    .about-bg{
+        background-position: 135% center;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    /* On desktop, move the background image 25% to the right */
+    .home-bg, .about-bg, .who-are-we {
+        background-position: center;
+        background-size: cover;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .who-are-we{
+        width: 100%;
+    }
+
+    .home-box-text,
+    .distinct-box-text,
+    .real-estate-box-text,
+    .tax-box-text,
+    .intellectual-box-text{
+        margin: 40vh 0 20vw;
+    }
+
+    .navbar{
+        background-color: #fafafa;
+    }
+
+    .navbar img{
+        height: 100px;
+    }
+
+    .real-estate-img{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .tax-law-img,
+    .l-and-e-img{
+        margin: 120px 0 0;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .bottom-to-top-text {
     display: inline-block;
-    animation: slideIn 1s ease-in;
+    animation: slideIn 0.2s ease-in;
 }
 
 .head-home {
     font-size: 5vw;
     font-family: "Palatino Linotype";
+    font-weight: bold;
 }
 
 .home-about{
-    background-color: #cbcbcb;
+    background-color: #eeeeee;
 }
+
 .home-desc {
     padding-top: 25px;
     padding-right: 5vw;
@@ -151,14 +318,41 @@ footer a:hover {
     text-align: center;
 }
 
+.smt{
+    position: relative;
+}
+
+.founder-text-box {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    min-width: 300px;
+}
+
 @keyframes slideIn {
     from {
-        transform: translateY(100%);
+        transform: translateX(-50%);
         opacity: 0;
     }
 
     to {
-        transform: translateY(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -188,7 +382,31 @@ h2 {
     transition: 0.3s;
     padding: 10px;
     margin: 10px;
-    min-height: 250px;
+    height: 300px;
+}
+
+.project-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+    min-height: 300px;
+    background-color: #fafafa;
+}
+
+.limited-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+}
+
+
+.limited-text2{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
 }
 
 .card-login {
@@ -200,6 +418,15 @@ h2 {
     background-color: white;
 }
 
+.card-project{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+    min-height: 500px;
+    background-color: white;
+}
+
 .card-contact {
     transition: 0.3s;
     padding: 10px;
@@ -208,32 +435,36 @@ h2 {
 }
 .card-tax-law:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/tax law bg.jpg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Poresko pravo.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
 
 .card-real-estate:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/real estate bg.jpg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/realEstate.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
 
 .card-l-e:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/l&e bg.jpg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Parnični postupak i izvršenje.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
 
 .card-corporate:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/corporate bg.jpeg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Privredno i kompanijsko pravo, M&A.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
@@ -241,24 +472,27 @@ h2 {
 
 .card-intellectual:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/intellectual bg.webp"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Intelektualna svojina.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
 
 .card-immigration:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/immigration bg.jpg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Imigracija.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
 
 .card-employment:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    background: url("../assets/employment bg.jpg"), rgba(65, 71, 192, 0.78);
+    background: url("../assets/Radni odnosi.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }
@@ -267,6 +501,7 @@ h2 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     background: url("../assets/commercial bg.jpg"), rgba(65, 71, 192, 0.78);
     background-size: cover;
+    background-position: center;
     background-blend-mode: multiply;
     color: rgb(250, 250, 250);
 }

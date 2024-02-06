@@ -8,7 +8,7 @@
         <div class="container new_project-margin">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="card">
+                    <div class="card-project">
                         <div class="card-header">
                             <h5 class="card-title text-center">New Project</h5>
                         </div>

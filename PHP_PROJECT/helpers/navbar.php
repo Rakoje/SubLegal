@@ -14,7 +14,7 @@ if(isset($_SESSION['logged']) && $_SESSION['logged']){
 
 if($language == "rs"){
     $home_label = "POČETNA";
-    $about_label = "O NAMA";
+    $about_label = "NAŠ TIM";
     $expertise_label = "EKSPERTIZA";
     $projects_label = "PROJEKTI";
     $contact_label = "KONTAKT";
@@ -26,20 +26,17 @@ if($language == "rs"){
     $contact_label = "CONTACT";
 }
 ?>
-
+<div id="overlay-on-mobile"></div>
 <nav class="navbar navbar-expand-lg navbar-light p-3 py-3 text-center">
     <div class="container-fluid">
-        <a class="navbar-brand pl-5" href="../index.php"><img src="../assets/SS 1.png" height="160px" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        <a class="navbar-brand pl-5" href="../index.php"><img src="../assets/SS 1.png" height="150px" alt=""></a>
+        <button class="navbar-toggler" id="mobile-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto ">
-                <li class="nav-item">
-                    <a class="nav-link mx-2" href="../index.php"><div class="x-s"><?php echo $home_label ?></div></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../about/about.php"><?php echo $about_label ?></a>
                 </li>
@@ -51,9 +48,6 @@ if($language == "rs"){
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../contact/contact.php"><?php echo $contact_label ?></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-2" href="<?php echo $admin_href;?>"><?php echo $admin_name; ?></a>
                 </li>
 
                 <li class="nav-item">

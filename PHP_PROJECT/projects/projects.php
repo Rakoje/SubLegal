@@ -32,7 +32,7 @@ if($language == "rs"){
         <!-- Project Cards -->
             <?php foreach($res as $row){
                 if($language == "rs"){ ?>
-                <div class="card m-3 project-card">
+                <div class="m-3 project-card">
                     <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $row['title_srb'] ?></h5>
