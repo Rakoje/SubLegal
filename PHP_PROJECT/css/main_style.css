@@ -497,6 +497,15 @@ h2 {
     background-color: #fafafa;
 }
 
+.blog-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+    min-height: 400px;
+    background-color: #fafafa;
+}
+
 .limited-text{
     display: -webkit-box;
     -webkit-box-orient: vertical;

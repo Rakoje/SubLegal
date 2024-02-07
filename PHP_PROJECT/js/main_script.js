@@ -31,7 +31,7 @@ $(document).ready(function() {
             url: '../controllers/GeneralController.php',
             type: 'POST',
             data: {
-                language: "rs",
+                language: "eng",
                 action: "changeLanguage"
             },
             success: function (response) {
@@ -90,7 +90,7 @@ $(document).ready(function() {
                     contentType: false,
                     processData: false,
                     success: function (response) {
-                        $("#success-message-add-blog").text("Project added successfully")
+                        $("#success-message-add-blog").text("Blog added successfully")
                         $("#blog_form")[0].reset();
                         $("#in_picture_b").val('');
                     },
@@ -145,7 +145,7 @@ $(document).ready(function() {
                     contentType: false,
                     processData: false,
                     success: function (response) {
-                        $("#success-message-add-project").text("Blog added successfully")
+                        $("#success-message-add-project").text("Project added successfully")
                         $("#project_form")[0].reset();
                         $("#in_picture").val('');
                     },
@@ -296,4 +296,36 @@ function leChange(element) {
 function leRestore(element) {
     var image = element.querySelector('img');
     image.src = '../assets/gavel_FILL0_wght400_GRAD200_opsz48.png'; // Replace with the path to the original image
+}
+
+function deleteBlog(id){
+    $.ajax({
+        url: '../controllers/AdminController.php',
+        type: 'POST',
+        data: {
+        id: id,
+        action: "deleteBlog"},
+        success: function (response) {
+            alert("Blog deleted succesfully")
+            location.reload();
+        },
+        error: function (error) {
+            alert("Error while deleting blog!")
+        }
+    });
+}
+
+function logout(){
+    $.ajax({
+        url: '../controllers/AdminController.php',
+        type: 'POST',
+        data: { action: "logout"},
+        success: function (response) {
+            alert("Logout succesfull")
+            location.reload();
+        },
+        error: function (error) {
+            alert("Error while deleting blog!")
+        }
+    });
 }

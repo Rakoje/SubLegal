@@ -89,7 +89,29 @@ if($action == "login"){
             "error" => "No Image"
         ));
     }
-} else if ($action == "add_blog") {
+}else if($action == "deleteBlog"){
+    try{
+        $id = $_POST['id'];
+        $pdo->query("delete from blog where id = $id");
+        echo $id;
+        echo json_encode(array(
+            "success" => 1,
+            "id" => $id
+        ));
+    }catch(PDOException $e){
+        echo json_encode(array(
+            "success" => 0,
+            "error" => "PDOException"
+        ));
+    }
+}
+else if($action == "logout"){
+    $_SESSION['logged'] = false;
+    echo json_encode(array(
+        "success" => 1
+    ));
+}
+else if ($action == "add_blog") {
     $title_srb = $_POST['in_title_srb_b']; // Get other form fields
     $content_srb = $_POST['in_content_srb_b'];
     $title_eng = $_POST['in_title_eng_b'];

@@ -57,6 +57,12 @@ if($language == "rs"){
                 <li class="nav-item">
                     <a class="nav-link mx-2" style="<?php if($language == "eng"){ echo 'display:none';} ?>" id="eng_lang" href="#">ENG</a>
                 </li>
+                <?php   if(isset($_SESSION['logged']) && $_SESSION['logged']){ ?>
+                <li class="nav-item">
+                    <button class="btn btn-danger" onClick="logout()">Log out</button>
+                </li>
+                <?php } ?>
+
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
