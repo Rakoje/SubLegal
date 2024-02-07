@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/realEstate.jpg" alt="" class="real-estate-img">
     <div class="col-sm-12 real-estate-box-text">
-        <div class="text-center"><h1>NEPOKRETNOST I GRADNJA</h1></div>
+        <div class="text-center"><h1>NEPOKRETNOSTI I GRADNJA</h1></div>
         <br>
         <div>
             SubLegal poseduje široko iskustvo u oblasti nekretinina i gradnje u Republici Srbiji i Crnoj Gori, sa

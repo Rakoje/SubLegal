@@ -12,7 +12,7 @@ if ($language == "rs") {
 ?>
 
 <div class="row expertise-bg" style="margin: 0">
-    <div class="col-sm-12 home-box-text">
+    <div class="col-sm-12 expertise-box-text">
         <div class="text-center"><h1>EKSPERTIZA</h1></div>
         <br>
         <div>

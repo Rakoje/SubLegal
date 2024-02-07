@@ -298,6 +298,15 @@ footer a:hover {
     margin: 70vh 40vw 10vw;
 }
 
+.expertise-box-text{
+    max-width: 600px;
+    padding: 3vw;
+    background-color: #cbcbcb;
+    animation: slideIn 1s ease;
+    border-radius: 5px;
+    margin: 35vh 10vw 15vw;
+}
+
 @media screen and (min-width: 1030px) {
     /* On desktop, move the background image 25% to the right */
     .home-bg{
@@ -357,6 +366,10 @@ footer a:hover {
     .tax-box-text,
     .intellectual-box-text{
         margin: 50vh 0 40vw;
+    }
+
+    .expertise-box-text{
+        margin: 70vh 0 10vw;
     }
 
     .navbar{
