@@ -238,6 +238,17 @@ footer a:hover {
     animation: slideIn 1s ease;
 }
 
+.intellectual-img{
+    display: block;
+    position:absolute;
+    margin-top: 25vh;
+    margin-left: 7vw;
+    height: auto;
+    width: 65%;
+    z-index: -1;
+    animation: slideIn 1s ease;
+}
+
 .employ-img{
     display: block;
     position:absolute;
@@ -284,7 +295,7 @@ footer a:hover {
     background-color: #cbcbcb;
     animation: slideInRight 1s ease;
     border-radius: 5px;
-    margin: 80vh 35vw 10vw;
+    margin: 70vh 40vw 10vw;
 }
 
 @media screen and (min-width: 1030px) {
@@ -364,7 +375,8 @@ footer a:hover {
 
     .tax-law-img,
     .l-and-e-img,
-    .employ-img{
+    .employ-img,
+    .intellectual-img{
         margin: 120px 0 0;
         width: 100%;
         height: auto;

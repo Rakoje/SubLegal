@@ -25,7 +25,6 @@ if ($language == "rs") {
     </div>
 </div>
 <div class="row home-about home-desc" id="dalje">
-    <h1 class="text-center">NAŠE USLUGE</h1>
     <div class="col-sm-12">
         <div class="row text-center d-flex justify-content-center" style="padding: 10px">
             <div class="col-sm-3">

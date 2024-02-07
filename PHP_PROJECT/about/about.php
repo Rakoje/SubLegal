@@ -37,9 +37,9 @@ konsultant u oblasti M&amp;A.<br><br><br>Diplomirao je na Pravnom fakultetu Univ
     $construction_label = "Nepokretnost i gradnja";
     $corp_label = "Korporativno i privredno pravo, M&A";
     $tax_label = "Poresko pravo";
-    $immigration_label = "Imigracija";
+    $immigration_label = "Imigraciono pravo";
     $int_label = "Intelektualna svojina";
-    $employ_label = "Radni odnosi";
+    $employ_label = "Radno pravo";
     $litigation_label = "Parnični i izvršni postupci";
 } else {
     $title_label = "ABOUT";

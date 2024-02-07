@@ -12,7 +12,7 @@ if ($language == "rs") {
 ?>
 
 <div class="row" style="margin: 0">
-    <img src="../assets/Intelektualna%20svojina.jpg" alt="" class="tax-law-img">
+    <img src="../assets/Intelektualna%20svojina.jpg" alt="" class="intellectual-img">
     <div class="col-sm-12 intellectual-box-text">
         <div class="text-center"><h1>INTELEKTUALNA SVOJINA</h1></div>
         <br>
