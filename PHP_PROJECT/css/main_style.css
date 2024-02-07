@@ -116,13 +116,13 @@ footer a:hover {
     margin-right: 0;
 }
 
-#error-message-add-project {
+#error-message-add-project #error-message-add-blog {
     color: red;
     font-size: small;
     margin-top: 5px; /* Add some space between the button and the error message */
 }
 
-#success-message-add-project {
+#success-message-add-project #success-message-add-blog {
     color: green;
     font-size: small;
     margin-top: 5px; /* Add some space between the button and the error message */

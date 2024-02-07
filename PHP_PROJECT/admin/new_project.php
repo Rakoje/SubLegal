@@ -62,6 +62,61 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="card-project">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">New Blog</h5>
+                        </div>
+                        <div class="card-body">
+                            <form name="blog_form" id="blog_form">
+                                <div class="form-group form-field">
+                                    <label for="in_date_b">Date:</label>
+                                    <input type="date" class="form-control" id="in_date_b" name="in_date_b" required>
+                                </div>
+                                <div class="form-group form-field">
+                                    <label for="in_picture_b">Picture:</label>
+                                    <input type="file" class="form-control-file" id="in_picture_b" name="in_picture_b" accept="image/*">
+                                </div>
+
+                                <!-- SRB and ENG Sections Side by Side -->
+                                <div class="row">
+                                    <!-- SRB Section -->
+                                    <div class="col-md-6">
+                                        <h6>SRB</h6>
+                                        <div class="form-group form-field">
+                                            <label for="in_title_srb_b">Title:</label>
+                                            <input type="text" class="form-control" id="in_title_srb_b" name="in_title_srb_b" required>
+                                        </div>
+                                        <div class="form-group form-field">
+                                            <label for="in_content_srb_b">Content:</label>
+                                            <textarea class="form-control" id="in_content_srb_b" name="in_content_srb_b" rows="4" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- ENG Section -->
+                                    <div class="col-md-6">
+                                        <h6>ENG</h6>
+                                        <div class="form-group form-field">
+                                            <label for="in_title_eng">Title:</label>
+                                            <input type="text" class="form-control" id="in_title_eng_b" name="in_title_eng_b" required>
+                                        </div>
+                                        <div class="form-group form-field">
+                                            <label for="in_content_eng_b">Content:</label>
+                                            <textarea class="form-control" id="in_content_eng_b" name="in_content_eng_b" rows="4" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <div>
+                                    <button type="button" id="add_blog_submit" class="btn btn-primary btn-block">Add</button>
+                                </div>
+                            </form>
+                            <div id="error-message-add-blog"></div>
+                            <div id="success-message-add-blog"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -1,11 +1,11 @@
 $(document).ready(function() {
     // Add smooth scroll to the top when clicking a link with class "scroll-to-top"
-    $('.home-desc').on('click', '.scroll-to-top', function(event) {
+    $('.home-desc').on('click', '.scroll-to-top', function (event) {
         event.preventDefault();
-        $('.home-desc').animate({ scrollTop: 0 }, 'slow');
+        $('.home-desc').animate({scrollTop: 0}, 'slow');
     });
 
-    $("#login_submit").click(function(){
+    $("#login_submit").click(function () {
         $.ajax({
             url: '../controllers/AdminController.php',
             type: 'POST',
@@ -17,7 +17,7 @@ $(document).ready(function() {
             success: function (response) {
                 var data = JSON.parse(response);
 
-                if(data.success){
+                if (data.success) {
                     window.location.assign('../admin/new_project.php');
                 } else {
                     $("#error-message-login").text(data.error)
@@ -26,7 +26,7 @@ $(document).ready(function() {
         })
     });
 
-    $("#rs_lang").click(function(){
+    $("#rs_lang").click(function () {
         $.ajax({
             url: '../controllers/GeneralController.php',
             type: 'POST',
@@ -45,7 +45,7 @@ $(document).ready(function() {
         });
     })
 
-    $("#eng_lang").click(function(){
+    $("#eng_lang").click(function () {
         $.ajax({
             url: '../controllers/GeneralController.php',
             type: 'POST',
@@ -64,7 +64,62 @@ $(document).ready(function() {
         });
     })
 
-    $("#add_project_submit").click(function(){
+    $("#add_blog_submit").click(function () {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Create FormData object to handle file uploads
+        var formData = new FormData($("#blog_form")[0]);
+
+        // Convert the image to base64 and add it to formData
+        var inputFile = $("#in_picture_b")[0];
+        var file = inputFile.files[0];
+        formData.append("action", "add_blog");
+
+        if (file) {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+
+            reader.onload = function (e) {
+                formData.append("base64_image", e.target.result);
+
+                // Send AJAX request
+                $.ajax({
+                    url: '../controllers/AdminController.php',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        $("#success-message-add-blog").text("Project added successfully")
+                        $("#blog_form")[0].reset();
+                        $("#in_picture_b").val('');
+                    },
+                    error: function (error) {
+                        $("#error-message-add-blog").text("Database Error!")
+                    }
+                });
+            };
+        } else {
+            // If no file selected, send AJAX request without the image
+            $.ajax({
+                url: '../controllers/AdminController.php',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    // Handle success response from the server
+                    console.log(response);
+                },
+                error: function (error) {
+                    // Handle error response from the server
+                    console.error(error);
+                }
+            });
+        }
+    });
+
+    $("#add_project_submit").click(function () {
         event.preventDefault(); // Prevent the default form submission
 
         // Create FormData object to handle file uploads
@@ -90,7 +145,7 @@ $(document).ready(function() {
                     contentType: false,
                     processData: false,
                     success: function (response) {
-                        $("#success-message-add-project").text("Project added successfully")
+                        $("#success-message-add-project").text("Blog added successfully")
                         $("#project_form")[0].reset();
                         $("#in_picture").val('');
                     },
@@ -117,29 +172,7 @@ $(document).ready(function() {
                 }
             });
         }
-
-        // var formData = new FormData($("#project_form")[0]);
-        //
-        // $.ajax({
-        //     url: '../controllers/AdminController.php',
-        //     type: 'POST',
-        //     data: {
-        //         action: "add_project",
-        //         formData: formData
-        //     },
-        //     success: function (response) {
-        //         var data = JSON.parse(response);
-        //
-        //         if(data.success){
-        //             window.location.assign('../admin/new_project.php');
-        //         } else {
-        //             $("#error-message-login").text(data.error)
-        //         }
-        //     }
-        // })
     });
-
-
 });
 
 $(window).scroll(function() {

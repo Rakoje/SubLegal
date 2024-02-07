@@ -8,6 +8,10 @@ $res = $pdo->query("
         ORDER BY date DESC
         LIMIT 5 ")->fetchAll();
 
+$res_b = $pdo->query("
+        SELECT image, content_eng, title_eng, content_srb, title_srb, DATE_FORMAT(date, '%d.%m.%Y') date FROM blog
+        ORDER BY date DESC ")->fetchAll();
+
 $language = $_SESSION['language'];
 
 if ($language == "rs") {
@@ -54,7 +58,49 @@ if ($language == "rs") {
     </div>
 </div>
 <div class="container" id="dalje">
-
+    <div class = "row">
+        <div class="col-sm-12 home-desc">
+            <h1 class="text-center"><b><?php echo "BLOG"; ?></b></h1>
+        </div>
+    </div>
+    <?php
+    $i = 0;
+    foreach($res_b as $row){
+    ?>
+    <?php if($i%2 == 0){ //svaki red ima 2 bloga -> promijeniti ovo i col-sm ako treba vise ili manje?>
+    <div class = "row">
+    <?php } ?>
+        <div class="col-sm-6">
+            <!-- Blog Cards -->
+            <?php
+            if ($language == "rs") { ?>
+                <p style="text-decoration: none; color:black">
+                    <div class="m-3 project-card">
+                        <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row['title_srb'] ?></h5>
+                            <p class="card-text"><?php echo $row['content_srb'] ?></p>
+                        </div>
+                    </div>
+                </p>
+            <?php } else { ?>
+                <p  style="text-decoration: none; color:black">
+                    <div class="card m-3 project-card">
+                        <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row['title_eng'] ?></h5>
+                            <p class="card-text"><?php echo $row['content_eng'] ?></p>
+                        </div>
+                    </div>
+                </p>
+            <?php } ?>
+        </div>
+    <?php
+        $i++;
+        if($i%2 == 0){ ?>
+    </div>
+    <?php } ?>
+<?php } ?>
 </div>
 <?php include('../helpers/footer.php'); ?>
 </body>

@@ -89,6 +89,49 @@ if($action == "login"){
             "error" => "No Image"
         ));
     }
+} else if ($action == "add_blog") {
+    $title_srb = $_POST['in_title_srb_b']; // Get other form fields
+    $content_srb = $_POST['in_content_srb_b'];
+    $title_eng = $_POST['in_title_eng_b'];
+    $content_eng = $_POST['in_content_eng_b'];
+    $blog_date = $_POST['in_date_b'];
+
+    // Handle the base64-encoded image
+    if (isset($_POST['base64_image'])) {
+        $base64_image = $_POST['base64_image'];
+
+
+        try{
+//            $pdo->query("
+//            INSERT INTO project (title_srb, title_eng, content_srb, content_eng, image, date)
+//            VALUES ('$title_srb', '$title_eng', '$content_srb', '$content_eng', 'base64_encoded_image_1', '2024-02-01'),
+//            ");
+            $stmt = $pdo->prepare("INSERT INTO blog (title_srb, title_eng, content_srb, content_eng, image, date) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->bindParam(1, $title_srb);
+            $stmt->bindParam(2, $title_eng);
+            $stmt->bindParam(3, $content_srb);
+            $stmt->bindParam(4, $content_eng);
+            $stmt->bindParam(5, $base64_image, PDO::PARAM_LOB);
+            $stmt->bindParam(6, $blog_date);
+            $stmt->execute();
+
+            echo json_encode(array(
+                "success" => 1,
+                "error" => ""
+            ));
+        } catch(PDOException $e){
+            echo json_encode(array(
+                "success" => 0,
+                "error" => "PDOException"
+            ));
+        }
+
+    } else {
+        echo json_encode(array(
+            "success" => 0,
+            "error" => "No Image"
+        ));
+    }
 }
 
 ?>
