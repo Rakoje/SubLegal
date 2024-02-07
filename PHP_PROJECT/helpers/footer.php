@@ -56,6 +56,10 @@ if($language == "rs"){
             </div>
             <div class="col-sm-12 text-center">
                 <p class="small mb-0">&copy; <?php echo $copyright_label ?></p>
+                <br>
+                <p class="small mb-0">Website:
+                    <a href="mailto:andrija.rakojevic.8@gmail.com">Andrija Rakojević</a> &
+                    <a href="mailto:terzic.dusan@yahoo.com">Dušan Terzić</a></p>
             </div>
             <!--<div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-3">Newsletter</h5>
