@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/Privredno%20i%20kompanijsko%20pravo,%20M&A.jpg" alt="" class="tax-law-img">
     <div class="col-sm-12 tax-box-text">
-        <div class="d-flex"><h1>KORPORATIVNO I PRIVREDNO PRAVO, M&A</h1></div>
+        <div class="text-center"><h1>KORPORATIVNO I PRIVREDNO PRAVO, M&A</h1></div>
         <br>
         <div>
             Najprimenjenija grana prava u oblasti poslovanja, prati proces od osnivanja kompanije pa do najsloženijih
@@ -73,11 +73,6 @@ if ($language == "rs") {
                     <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                          alt="">Nepokretnost i izgradnja</a>
             </div>
-            <div class="col-sm-6"  onmouseover="coChange(this)" onmouseout="coRestore(this)"  id="hover_white">
-                <a href="corporate.php">
-                    <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
-                         alt="">Korporativno i provredno pravo</a><br>
-            </div>
             <div class="col-sm-6"  onmouseover="taxChange(this)" onmouseout="taxRestore(this)"  id="hover_white">
                 <a href="tax_law.php" >
                     <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
@@ -86,7 +81,7 @@ if ($language == "rs") {
             <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
                 <a href="immigration.php">
                     <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
+                    Imigraciono pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
@@ -96,7 +91,7 @@ if ($language == "rs") {
             <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
                 <a href="employment.php">
                     <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
+                    Radno pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
                 <a href="litigation_enforcement.php">

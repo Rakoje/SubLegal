@@ -16,13 +16,13 @@ if($language == "rs"){
     $home_label = "POČETNA";
     $about_label = "NAŠ TIM";
     $expertise_label = "EKSPERTIZA";
-    $projects_label = "PROJEKTI";
+    $projects_label = "BLOG";
     $contact_label = "KONTAKT";
 } else {
     $home_label = "HOME";
     $about_label = "ABOUT";
     $expertise_label = "EXPERTISE";
-    $projects_label = "PROJECTS";
+    $projects_label = "BLOG";
     $contact_label = "CONTACT";
 }
 ?>

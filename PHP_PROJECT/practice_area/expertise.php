@@ -13,14 +13,10 @@ if ($language == "rs") {
 
 <div class="row expertise-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="d-flex"><h1>EKSPERTIZA</h1></div>
+        <div class="text-center"><h1>EKSPERTIZA</h1></div>
         <br>
         <div>
-            U SubLegal-u, posvećujemo se pružanju vrhunskih pravnih ekspertiza koje obezbeđuju rešenja prilagođena Vašim
-            specifičnim
-            potrebama. Naša konsultantska kuća okuplja tim stručnjaka koji pokrivaju širok spektar pravnih oblasti,
-            pružajući
-            sveobuhvatnu pravnu podršku kako pojedincima tako i preduzećima.
+            Pružamo idealnu kombinaciju striktnog znanja i opuštenog pristupa.
         </div>
         <br>
         <div>
@@ -33,7 +29,7 @@ if ($language == "rs") {
     <div class="col-sm-12">
         <div class="row text-center d-flex justify-content-center" style="padding: 10px">
             <div class="col-sm-3">
-                <div class="card card-real-estate">
+                <div class="card card-real-estate" id="hover_white">
                     <a href="real_estate.php">
                         <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                              alt="">
@@ -62,7 +58,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-corporate">
+                <div class="card card-corporate" id="hover_white">
                     <a href="corporate.php">
                         <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                              alt="">
@@ -95,7 +91,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-tax-law">
+                <div class="card card-tax-law" id="hover_white">
                     <a href="tax_law.php">
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
@@ -117,12 +113,12 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-immigration">
+                <div class="card card-immigration" id="hover_white">
                     <a href="immigration.php">
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2>Imigracija</h2>
+                        <h2>Imigraciono pravo</h2>
                         <div class="limited-text">
                             Svesni toga da postoji toliko raznih aspekata kada porodice ili pojedinci odluče da se
                             presele u
@@ -150,7 +146,7 @@ if ($language == "rs") {
     </div>
     <div class="col-sm-12 pb-3">
         <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2">
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="hover_white">
                 <div class="card card-intellectual">
                     <a href="intellectual.php">
                         <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
@@ -173,11 +169,11 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-employment">
+                <div class="card card-employment" id="hover_white">
                     <a href="employment.php">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">
-                        <h2>Radni odnosi</h2>
+                        <h2>Radno pravo</h2>
                         <div class="limited-text">Kao neizostavan segment privrede i korporativnog poslovanja, radni
                             odnosi
                             igraju, prema našem mišljenju, najznajčajniju ulogu u postavljanju temelja za uspešno
@@ -196,7 +192,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-l-e">
+                <div class="card card-l-e" id="hover_white">
                     <a href="litigation_enforcement.php">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">

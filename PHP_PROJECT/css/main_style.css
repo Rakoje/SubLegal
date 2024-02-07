@@ -164,11 +164,12 @@ footer a:hover {
 }
 
 .project-bg{
-    background-image: url(../assets/Poslednji_projekat.jpg);
+    background-image: url(../assets/Pocetna_test.jpg);
     min-height: 700px;
     width: 100%;
-    background-position: 200% 70%;
+    background-position: 100% 70%;
     background-repeat: no-repeat;
+    background-size: 1000px;
 }
 
 
@@ -177,6 +178,7 @@ footer a:hover {
     min-height: 700px;
     width: 100%;
     background-position: 100% 70%;
+    background-size: 1000px;
     background-repeat: no-repeat;
 }
 
@@ -191,7 +193,7 @@ footer a:hover {
     background-color: #cbcbcb;
     animation: slideIn 1s ease;
     border-radius: 5px;
-    margin: 35vh 10vw 10vw;
+    margin: 35vh 10vw 15vw;
 }
 
 .distinct-box-text{
@@ -264,7 +266,7 @@ footer a:hover {
     background-color: #cbcbcb;
     animation: slideInRight 1s ease;
     border-radius: 5px;
-    margin: 70vh 40vw 10vw;
+    margin: 77vh 40vw 10vw;
 }
 
 .real-estate-box-text{
@@ -297,9 +299,24 @@ footer a:hover {
 
 @media screen and (max-width: 1030px) {
     /* On desktop, move the background image 25% to the right */
-    .home-bg,
-    .about-bg,
-    .expertise-bg,
+    .home-bg{
+        background-position: 53% 95%;
+        background-size: 200%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about-bg{
+        background-position: 50% 30%;
+        background-size: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .expertise-bg{
+        background-position: 50% 70%;
+        background-size: 200%;
+        margin-left: 0;
+        margin-right: 0;
+    }
     .project-bg{
         background-position: center;
         background-size: cover;
@@ -307,9 +324,16 @@ footer a:hover {
         margin-right: 0;
     }
 
-    .who-are-we{
-        background-size: cover;
+    .contact-bg{
         background-position: center;
+        background-size: cover;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .who-are-we{
+        background-size: 200%;
+        background-position: 60% 400%;
         width: 100%;
         margin-right: 0;
         margin-left: 0;
@@ -321,7 +345,7 @@ footer a:hover {
     .real-estate-box-text,
     .tax-box-text,
     .intellectual-box-text{
-        margin: 40vh 0 20vw;
+        margin: 50vh 0 40vw;
     }
 
     .navbar{

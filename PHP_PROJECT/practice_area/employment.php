@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/Radni%20odnosi.jpg" alt="" class="employ-img">
     <div class="col-sm-12 tax-box-text">
-        <div class="d-flex"><h1>RADNI ODNOSI</h1></div>
+        <div class="text-center"><h1>RADNO PRAVO</h1></div>
         <br>
         <div>
             Kao neizostavan segment privrede i korporativnog poslovanja, radni odnosi igraju, prema našem mišljenju,
@@ -79,17 +79,12 @@ if ($language == "rs") {
             <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
                 <a href="immigration.php">
                     <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
+                    Imigraciono pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
                     <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                          alt="">Intelektualna svojina</a><br>
-            </div>
-            <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
-                <a href="employment.php">
-                    <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
                 <a href="litigation_enforcement.php">

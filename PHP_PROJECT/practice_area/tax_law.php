@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/Poresko%20pravo.jpg" alt="" class="tax-law-img">
     <div class="col-sm-12 tax-box-text">
-        <div class="d-flex"><h1>PORESKO PRAVO</h1></div>
+        <div class="text-center"><h1>PORESKO PRAVO</h1></div>
         <br>
         <div>
             Neizostavan deo svakog uspešnog biznisa je jasna poreska strategija i rukovođenje u poreskoj politici.
@@ -87,15 +87,10 @@ if ($language == "rs") {
                     <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                          alt="">Korporativno i provredno pravo</a><br>
             </div>
-            <div class="col-sm-6"  onmouseover="taxChange(this)" onmouseout="taxRestore(this)"  id="hover_white">
-                <a href="tax_law.php" >
-                    <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Poresko pravo</a><br>
-            </div>
             <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
                 <a href="immigration.php">
                     <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
+                    Imigraciono pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
@@ -105,7 +100,7 @@ if ($language == "rs") {
             <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
                 <a href="employment.php">
                     <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
+                    Radno pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
                 <a href="litigation_enforcement.php">

@@ -12,9 +12,9 @@ if ($language == "rs") {
     $contact_description_label = "Naša kancelarija se nalazi u srcu Beograda, nedaleko od Trga Republike.";
     $address_label = "Zmaj Jovina 3, 11102 Belgrade";
     $inquiries_label = "UPITI";
-    $inquiries_description_label = "Naši advokati su uvek spremni da preuzmu vaše pozive, nemojte se ustručavati da bilo šta pitate.";
+    $inquiries_description_label = "Naši advokati su uvek spremni da preuzmu Vaše pozive, nemojte se ustručavati da bilo šta pitate.";
     $message_us_label = "MEJL";
-    $send_mail_label = "Pošaljite nam brzu i-mejl u vezi Vaših pitanjima, mi ćemo Vam se javiti u najkraćem roku.";
+    $send_mail_label = "Pošaljite nam mejl u vezi Vaših pitanja, mi ćemo Vam se javiti u najkraćem roku.";
     $contact_us_label = "KONTAKTIRAJTE NAS";
 } else {
     $contact_title_label = "CONTACT";
@@ -32,19 +32,26 @@ if ($language == "rs") {
 
 <div class="row contact-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="d-flex"><h1>KONTAKT</h1></div>
+        <div class="text-center"><h1>KONTAKT</h1></div>
         <br>
-        <div>
-        </div>
+        <p>Kontaktirajte nas u vezi Vaših pitanja</p>
         <br>
-        <div>
-            <a href="#info" style="text-decoration: none"> - INFORMACIJE</a>
+        <div class="d-flex justify-content-between">
+            <div>
+                <a href="#location" style="text-decoration: none"> - LOKACIJA</a>
+            </div>
+            <div>
+                <a href="#phone" style="text-decoration: none"> - UPITI</a>
+            </div>
+            <div>
+                <a href="#mail" style="text-decoration: none"> - MEJL</a>
+            </div>
         </div>
     </div>
 </div>
 <div class="row home-about text-center px-5 py-3" id="info">
     <div class="col-sm-4">
-        <div class="card-contact">
+        <div class="card-contact" id="location">
             <img src="../assets/contact%20address.png" class="icons no-hover-img" alt="">
             <h2><?php echo $visit_us_label; ?></h2>
             <div><?php echo $contact_description_label; ?></div>
@@ -54,7 +61,7 @@ if ($language == "rs") {
         </div>
     </div>
     <div class="col-sm-4">
-        <div class="card-contact">
+        <div class="card-contact" id="phone">
             <img src="../assets/contact%20phone.png" class="icons no-hover-img" alt="">
             <h2><?php echo $inquiries_label; ?></h2>
             <div><?php echo $inquiries_description_label; ?></div>
@@ -64,7 +71,7 @@ if ($language == "rs") {
         </div>
     </div>
     <div class="col-sm-4">
-        <div class="card-contact">
+        <div class="card-contact" id="mail">
             <img src="../assets/contact%20mail.png" class="icons no-hover-img" alt="">
             <h2><?php echo $message_us_label; ?></h2>
             <div><?php echo $send_mail_label; ?></div>

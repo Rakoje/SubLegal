@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/Imigracija.jpg" alt="" class="tax-law-img">
     <div class="col-sm-12 tax-box-text">
-        <div class="d-flex"><h1>IMIGRACIJA</h1></div>
+        <div class="text-center"><h1>IMIGRACIONO PRAVO</h1></div>
         <br>
         <div>
             Svesni toga da postoji toliko raznih aspekata kada porodice ili pojedinci odluče da se presele u drugu
@@ -67,11 +67,6 @@ if ($language == "rs") {
                     <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                     Poresko pravo</a><br>
             </div>
-            <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
-                <a href="immigration.php">
-                    <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
-            </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
                     <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
@@ -80,7 +75,7 @@ if ($language == "rs") {
             <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
                 <a href="employment.php">
                     <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
+                    Radno pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
                 <a href="litigation_enforcement.php">

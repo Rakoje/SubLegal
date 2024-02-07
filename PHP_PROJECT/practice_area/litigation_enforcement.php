@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/Parnični%20postupak%20i%20izvršenje.jpg" alt="" class="l-and-e-img">
     <div class="col-sm-12 tax-box-text">
-        <div class="d-flex"><h1>PARNIČNI POSTPUCI I IZVRŠENJE</h1></div>
+        <div class="text-center"><h1>PARNIČNI POSTUPCI I IZVRŠENJE</h1></div>
         <br>
         <div>
             Kao neizostavan deo uspešne pravne pomoći predstavlja zastupanje klijenata pred domaćim i stranim sudovima i
@@ -63,7 +63,7 @@ if ($language == "rs") {
             <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
                 <a href="immigration.php">
                     <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
+                    Imigraciono pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
@@ -73,12 +73,8 @@ if ($language == "rs") {
             <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
                 <a href="employment.php">
                     <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
+                    Radno pravo</a><br>
             </div>
-            <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
-                <a href="litigation_enforcement.php">
-                    <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Parnični i izvršni postupci</a><br></div>
         </div>
     </div>
 </div><?php include('../helpers/footer.php'); ?>

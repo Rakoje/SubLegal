@@ -14,7 +14,7 @@ if ($language == "rs") {
 <div class="row real-estate-bg" style="margin: 0">
     <img src="../assets/realEstate.jpg" alt="" class="real-estate-img">
     <div class="col-sm-12 real-estate-box-text">
-        <div class="d-flex"><h1>NEPOKRETNOST I GRADNJA</h1></div>
+        <div class="text-center"><h1>NEPOKRETNOST I GRADNJA</h1></div>
         <br>
         <div>
             SubLegal poseduje široko iskustvo u oblasti nekretinina i gradnje u Republici Srbiji i Crnoj Gori, sa
@@ -49,11 +49,6 @@ if ($language == "rs") {
         </div>
         <br>
         <div class="row">
-            <div class="col-sm-6" onmouseover="reChange(this)" onmouseout="reRestore(this)"  id="hover_white">
-                <a href="real_estate.php">
-                    <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
-                         alt="">Nepokretnost i izgradnja</a>
-            </div>
             <div class="col-sm-6"  onmouseover="coChange(this)" onmouseout="coRestore(this)"  id="hover_white">
                 <a href="corporate.php">
                     <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
@@ -67,7 +62,7 @@ if ($language == "rs") {
             <div class="col-sm-6" onmouseover="imChange(this)" onmouseout="imRestore(this)" id="hover_white">
                 <a href="immigration.php">
                     <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Imigracija</a><br>
+                    Imigraciono pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="intChange(this)" onmouseout="intRestore(this)"  id="hover_white">
                 <a href="intellectual.php">
@@ -77,7 +72,7 @@ if ($language == "rs") {
             <div class="col-sm-6"  onmouseover="emChange(this)" onmouseout="emRestore(this)"  id="hover_white">
                 <a href="employment.php">
                     <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
-                    Radni odnosi</a><br>
+                    Radno pravo</a><br>
             </div>
             <div class="col-sm-6"  onmouseover="leChange(this)" onmouseout="leRestore(this)" id="hover_white">
                 <a href="litigation_enforcement.php">

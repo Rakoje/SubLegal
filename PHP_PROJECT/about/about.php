@@ -16,12 +16,20 @@ Posebno je prepoznat po svom pragmatičnom pristupu problemima odnosno rešenjim
 akcentom na postupcima koji se tiču nepokretnosti, složenim građevinskim sporovima, 
 privrednim sporovima i imigracionim postupcima. 
 <br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda. 
-<br><br><a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>nikola@sublegal.rs</a>
+<br><br>
+<a href='mailto:nikola@sublegal.rs' style='text-decoration: none'><img src=\"../assets/footer mail.png\"></a> 
+<a href='https://www.linkedin.com/in/nikola-suboti%C4%87-4518922a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style='text-decoration: none; color:black'><img src=\"../assets/linkedin-01.png\"></a>
 ";
     $subara_text = "Dugogodišnji je advokat i jedan je od osnivača SubLegal advokatske kancelarije i konsultantske kuće. 
-<br><br><br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz zastupanje velikih firmi i grupacija koje posluju na teritoriji Zapadnog Balkana. Sa posebnim akcentom na razvoj poslovanja, učestvovao je u mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine, distribucija, avioindustrija, transport, retail i prehrambena industrija.
-<br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
-<br><br><a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>aleksandar@sublegal.rs</a> 
+<br><br><br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz
+satupanje domaćih i stranih kompanija i grupacija koje posluju na teritoriji Zapadnog
+Balkana. Sa posebnom pažnjom usmerenom na razvoj poslovanja, učestvovao je u
+mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine,
+distribucija, avioindustrija, transport, retail i prehrambena industrija. Vodeći je
+konsultant u oblasti M&amp;A.<br><br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
+<br><br>
+<a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'><img src=\"../assets/footer mail.png\"></a> 
+<a href='https://www.linkedin.com/in/aleksandar-%C5%A1ubari%C4%87-64320422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style='text-decoration: none; color:black'><img src=\"../assets/linkedin-01.png\"></a>
 ";
     $our_team_label = "NAŠ TIM";
     $our_team_desc = "Izaberite ekspertizu koja Vas zanima kako biste upoznali Vašeg kontakta:";
@@ -67,7 +75,7 @@ privrednim sporovima i imigracionim postupcima.
 ?>
 <div class="row about-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="d-flex"><h1>O NAMA</h1></div>
+        <div class="text-center"><h1>O NAMA</h1></div>
         <br>
         <div>Uz duboko ukorenjene vrednosti integriteta, transparentnosti i odanosti pravdi, članovi
             SubLegal tima posvećeni su ostvarivanju prava i pravde za naše klijente.
@@ -84,8 +92,10 @@ privrednim sporovima i imigracionim postupcima.
         <br>
         <br>
     </div>
-    <div class="col-sm-4 text-center"><img src="../assets/subara.jpg" alt=""
-                                                             class="person-img img-fluid"></div>
+    <div class="col-sm-4 text-center"">
+        <img src="../assets/subara.jpg" alt=""
+             class="person-img img-fluid">
+    </div>
     <div class="col-sm-8 person-text" id="subara">
         <h2>ALEKSANDAR ŠUBARIĆ</h2> <span><?php echo $attorney_of_law_label; ?></span>
         <hr>

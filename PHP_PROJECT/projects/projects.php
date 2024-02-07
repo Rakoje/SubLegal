@@ -12,53 +12,49 @@ $language = $_SESSION['language'];
 
 if ($language == "rs") {
     $latest_label = "LATEST PROJECTS";
+    $latest_link = "https://" . $res[0]['content_srb'];
 } else {
     $latest_label = "LATEST PROJECTS";
+    $latest_link = "https://" . $res[0]['content_eng'];
 }
+
 ?>
 <div class="row project-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="d-flex"><h1>PROJEKTI</h1></div>
-        <br>
-        <div>
-            U SubLegal-u, kreiramo pravne inovacije koje oblikuju budućnost prava. Naša konsultantska kuća nije samo posvećena
-            rešavanju trenutnih pravnih izazova, već smo predani stvaranju i podržavanju projekata koji podstiču napredak i pružaju
-            nove perspektive.
-        </div>
-        <br>
-        <div>
-            <a href="#dalje" style="text-decoration: none"> - VIDI PROJEKTE</a>
+        <div class="text-center"><h1 style="font-size: 25px">POSLEDNJI PROJEKAT</h1></div>
+        <div class="row ">
+            <div class="col-sm-12">
+                <!-- Project Cards -->
+                <?php
+                if ($language == "rs") { ?>
+                    <a href="<?php echo $latest_link ?>" style="text-decoration: none; color:black">
+                        <div class="m-3 project-card">
+                            <img src="<?php echo $res[0]['image']; ?>" class="card-img-top" alt="Project Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $res[0]['title_srb'] ?></h5>
+                                <a href="<?php echo $latest_link; ?>" style="text-decoration: none"
+                                   class="card-text"><?php echo $res[0]['content_srb'] ?></a>
+                            </div>
+                        </div>
+                    </a>
+                <?php } else { ?>
+                    <a href="<?php echo $latest_link ?>" style="text-decoration: none; color:black">
+                        <div class="card m-3 project-card">
+                            <img src="<?php echo $res[0]['image']; ?>" class="card-img-top" alt="Project Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $res[0]['title_eng'] ?></h5>
+                                <a href="<?php echo $latest_link; ?>" style="text-decoration: none"
+                                   class="card-text"><?php echo $res[0]['content_eng'] ?></a>
+                            </div>
+                        </div>
+                    </a>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </div>
 <div class="container" id="dalje">
-    <div class="row ">
-        <div class="col-sm-12">
-            <h1 class="home-desc text-center"><b>POSLEDNJI PROJEKAT</b></h1>
-            <!-- Project Cards -->
-            <?php foreach ($res as $row) {
-                if ($language == "rs") { ?>
-                    <div class="m-3 project-card">
-                        <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $row['title_srb'] ?></h5>
-                            <p class="card-text"><small class="text-muted"><?php echo $row['date'] ?></small></p>
-                            <p class="card-text"><?php echo $row['content_srb'] ?></p>
-                        </div>
-                    </div>
-                <?php } else { ?>
-                    <div class="card m-3 project-card">
-                        <img src="<?php echo $row['image']; ?>" class="card-img-top" alt="Project Image">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $row['title_eng'] ?></h5>
-                            <p class="card-text"><small class="text-muted"><?php echo $row['date'] ?></small></p>
-                            <p class="card-text"><?php echo $row['content_eng'] ?></p>
-                        </div>
-                    </div>
-                <?php }
-            } ?>
-        </div>
-    </div>
+
 </div>
 <?php include('../helpers/footer.php'); ?>
 </body>

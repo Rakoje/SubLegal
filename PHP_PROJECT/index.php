@@ -29,7 +29,7 @@ if ($language == "rs") {
 
 <div class="row home-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="d-flex"><h1>DOBRODOŠLI</h1></div>
+        <div class="text-center"><h1 style="font-size: 30px">DOBRODOŠLI NA MESTO GDE BIZNIS SUSREĆE PRAVO</h1></div>
         <br>
         <div>SUBLEGAL je advokatska kancelarija specijalizovana u sferi privredno – poslovnog prava sa sedištem u
             Beogradu, Republika Srbija. Pružamo različite konsultantske usluge domaćim i stranim privrednim društvima
@@ -45,7 +45,7 @@ if ($language == "rs") {
 </div>
 <div class="row who-are-we">
     <div class="col-sm-12 distinct-box-text animated-div" id="targetDiv">
-        <div class="d-flex"><h1>PO ČEMU SE RAZLIKUJEMO?</h1></div>
+        <div class="text-center"><h1 style="font-size: 30px">PO ČEMU SE RAZLIKUJEMO?</h1></div>
         <br>
         <div>Pružamo sveobuhvatan obim pravne usluge, usmeren ka praktičnim rešenjima. Naše sveto pismo je temeljan
             pristup problematici i sagledavanje iste iz više uglova – upravo to nam omogućava naš tim sačinjen od
@@ -65,7 +65,7 @@ if ($language == "rs") {
     <div class="col-sm-12">
         <div class="row text-center d-flex justify-content-center" style="padding: 10px">
             <div class="col-sm-3">
-                <div class="card card-real-estate">
+                <div class="card card-real-estate" id="hover_white">
                     <a href="practice_area/real_estate.php">
                         <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                              alt="">
@@ -94,7 +94,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-corporate">
+                <div class="card card-corporate" id="hover_white">
                     <a href="practice_area/corporate.php">
                         <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                              alt="">
@@ -127,7 +127,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-tax-law">
+                <div class="card card-tax-law" id="hover_white">
                     <a href="practice_area/tax_law.php">
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
@@ -149,12 +149,12 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-immigration">
+                <div class="card card-immigration" id="hover_white">
                     <a href="practice_area/immigration.php">
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2>Imigracija</h2>
+                        <h2>Imigraciono pravo</h2>
                         <div class="limited-text">
                             Svesni toga da postoji toliko raznih aspekata kada porodice ili pojedinci odluče da se
                             presele u
@@ -183,7 +183,7 @@ if ($language == "rs") {
     <div class="col-sm-12 pb-3">
         <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2">
             <div class="col-sm-3">
-                <div class="card card-intellectual">
+                <div class="card card-intellectual" id="hover_white">
                     <a href="practice_area/intellectual.php">
                         <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img"
                              alt="">
@@ -205,11 +205,11 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-employment">
+                <div class="card card-employment" id="hover_white">
                     <a href="practice_area/employment.php">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">
-                        <h2>Radni odnosi</h2>
+                        <h2>Radno pravo</h2>
                         <div class="limited-text">Kao neizostavan segment privrede i korporativnog poslovanja, radni
                             odnosi
                             igraju, prema našem mišljenju, najznajčajniju ulogu u postavljanju temelja za uspešno
@@ -228,7 +228,7 @@ if ($language == "rs") {
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card card-l-e">
+                <div class="card card-l-e" id="hover_white">
                     <a href="practice_area/litigation_enforcement.php">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">
@@ -260,7 +260,13 @@ if ($language == "rs") {
             <img src="../assets/subara.jpg" alt="" class="person-img img-fluid">
             <div class="founder-text-box">
                 <h3>ALEKSANDAR ŠUBARIĆ</h3>
-                <p>advokat</p>
+                <p>advokat
+                    <a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>
+                        <img src="assets/footer mail.png" alt=""></a>
+                    <a href='https://www.linkedin.com/in/aleksandar-%C5%A1ubari%C4%87-64320422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+                       style='text-decoration: none; color:black'><img src="assets/linkedin-01.png" alt=""></a>
+
+                </p>
                 <a href="about/about.php#subara" style="text-decoration: none; text-align: right">DETALJI</a>
             </div>
         </div>
@@ -269,7 +275,11 @@ if ($language == "rs") {
             <img src="../assets/subo.jpg" alt="" class="person-img img-fluid">
             <div class="founder-text-box">
                 <h3>NIKOLA SUBOTIĆ</h3>
-                <p>advokat</p>
+                <p>advokat
+                    <a href='mailto:nikola@sublegal.rs' style='text-decoration: none'><img src="assets/footer mail.png"></a>
+                    <a href='https://www.linkedin.com/in/nikola-suboti%C4%87-4518922a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+                       style='text-decoration: none; color:black'><img src="assets/linkedin-01.png"></a>
+                </p>
                 <a href="about/about.php#subo" style="text-decoration: none; text-align: right">DETALJI</a>
             </div>
         </div>
