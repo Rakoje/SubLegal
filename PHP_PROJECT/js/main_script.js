@@ -31,7 +31,7 @@ $(document).ready(function() {
             url: '../controllers/GeneralController.php',
             type: 'POST',
             data: {
-                language: "eng",
+                language: "rs",
                 action: "changeLanguage"
             },
             success: function (response) {

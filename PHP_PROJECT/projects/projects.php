@@ -15,17 +15,17 @@ $res_b = $pdo->query("
 $language = $_SESSION['language'];
 
 if ($language == "rs") {
-    $latest_label = "LATEST PROJECTS";
+    $latest_label = "POSLEDNJI PROJEKAT";
     $latest_link = "https://" . $res[0]['content_srb'];
 } else {
-    $latest_label = "LATEST PROJECTS";
+    $latest_label = "LATEST PROJECT";
     $latest_link = "https://" . $res[0]['content_eng'];
 }
 
 ?>
 <div class="row project-bg" style="margin: 0">
     <div class="col-sm-12 home-box-text">
-        <div class="text-center"><h1 style="font-size: 25px">POSLEDNJI PROJEKAT</h1></div>
+        <div class="text-center"><h1 style="font-size: 25px"><?php echo $latest_label ?></h1></div>
         <div class="row ">
             <div class="col-sm-12">
                 <!-- Project Cards -->

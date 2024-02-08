@@ -7,44 +7,51 @@
 $language = $_SESSION['language'];
 
 if ($language == "rs") {
-    $contact_title_label = "CONTACT";
-    $visit_us_label = "LOKACIJA";
+    $contact_title_label = "KONTAKT";
+    $visit_us_label = "POSJETITE NAS";
+    $location_label = "LOKACIJA";
     $contact_description_label = "Naša kancelarija se nalazi u srcu Beograda, nedaleko od Trga Republike.";
     $address_label = "Zmaj Jovina 3, 11102 Belgrade";
     $inquiries_label = "UPITI";
     $inquiries_description_label = "Naši advokati su uvek spremni da preuzmu Vaše pozive, nemojte se ustručavati da bilo šta pitate.";
     $message_us_label = "MEJL";
+    $mail_label = "MEJL";
     $send_mail_label = "Pošaljite nam mejl u vezi Vaših pitanja, mi ćemo Vam se javiti u najkraćem roku.";
     $contact_us_label = "KONTAKTIRAJTE NAS";
+    $contact_us_label2 = "Kontaktirajte nas u vezi Vaših pitanja";
 } else {
     $contact_title_label = "CONTACT";
     $visit_us_label = "VISIT US";
+    $location_label = "LOCATION";
     $contact_description_label = "Our office is located in the heart of Belgrade, not far from the Republic Square.";
     $address_label = "Zmaj Jovina 3, 11102 Belgrade";
     $inquiries_label = "INQUIRIES";
     $inquiries_description_label = "Our attorneys are always ready to take your calls, don't hesitate to ask anything";
     $message_us_label = "MESSAGE US";
+    $mail_label = "MAIL";
     $send_mail_label = "Send us a quick e-mail regarding all of Your questions, we will get back to You in no time.";
     $contact_us_label = "FEEL FREE TO CONTACT US";
+    $contact_us_label2 = "Contact us about any questions You might have";
+
 }
 
 ?>
 
 <div class="row contact-bg" style="margin: 0">
     <div class="col-sm-12 expertise-box-text">
-        <div class="text-center"><h1>KONTAKT</h1></div>
+        <div class="text-center"><h1><?php echo $contact_title_label ?></h1></div>
         <br>
-        <p>Kontaktirajte nas u vezi Vaših pitanja</p>
+        <p><?php echo $contact_us_label2 ?></p>
         <br>
         <div class="d-flex justify-content-between">
             <div>
-                <a href="#location" style="text-decoration: none"> - LOKACIJA</a>
+                <a href="#location" style="text-decoration: none"> - <?php echo $location_label ?></a>
             </div>
             <div>
-                <a href="#phone" style="text-decoration: none"> - UPITI</a>
+                <a href="#phone" style="text-decoration: none"> - <?php echo $inquiries_label ?></a>
             </div>
             <div>
-                <a href="#mail" style="text-decoration: none"> - MEJL</a>
+                <a href="#mail" style="text-decoration: none"> - <?php echo $mail_label ?></a>
             </div>
         </div>
     </div>
