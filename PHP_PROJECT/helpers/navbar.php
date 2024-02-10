@@ -41,7 +41,7 @@ if($language == "rs"){
                     <a class="nav-link mx-2" href="../practice_area/expertise.php"><?php echo $expertise_label ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-2" href="../projects/projects.php"><?php echo $projects_label ?></a>
+                    <a class="nav-link mx-2" href="../blog/blog.php"><?php echo $projects_label ?></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" href="../about/about.php"><?php echo $about_label ?></a>
@@ -52,7 +52,7 @@ if($language == "rs"){
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link mx-2" style="<?php if($language == "rs"){ echo 'display:none';} ?>" id="rs_lang" href="#">RS</a>
+                    <a class="nav-link mx-2" style="<?php if($language == "rs"){ echo 'display:none';} ?>" id="rs_lang" href="#">SRB</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-2" style="<?php if($language == "eng"){ echo 'display:none';} ?>" id="eng_lang" href="#">ENG</a>

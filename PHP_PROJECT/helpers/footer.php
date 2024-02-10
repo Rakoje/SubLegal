@@ -38,7 +38,7 @@ if($language == "rs"){
                     <li><a href="../index.php"><?php echo $home_label ?></a></li>
                     <li><a href="../about/about.php"><?php echo $about_label ?></a></li>
                     <li><a href="../practice_area/expertise.php"><?php echo $expertise_label ?></a></li>
-                    <li><a href="../projects/projects.php"><?php echo $projects_label ?></a></li>
+                    <li><a href="../blog/blog.php"><?php echo $projects_label ?></a></li>
                     <li><a href="../contact/contact.php"><?php echo $contact_label ?></a></li>
                 </ul>
             </div>
@@ -58,8 +58,8 @@ if($language == "rs"){
                 <p class="small mb-0">&copy; <?php echo $copyright_label ?></p>
                 <br>
                 <p class="small mb-0">Website:
-                    <a href="mailto:andrija.rakojevic.8@gmail.com">Andrija Rakojević</a> &
-                    <a href="mailto:terzic.dusan@yahoo.com">Dušan Terzić</a></p>
+                    <a href="https://rs.linkedin.com/in/andrija-rakojevic-b32660254">Andrija Rakojević</a> &
+                    <a href="https://www.linkedin.com/in/du%C5%A1an-terzi%C4%87-431816254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Dušan Terzić</a></p>
             </div>
             <!--<div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-3">Newsletter</h5>

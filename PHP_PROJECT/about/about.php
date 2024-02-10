@@ -11,23 +11,27 @@ if ($language == "rs") {
     $attorney_of_law_label = "osnivač/advokat";
     $subo_text = "Nikola je  jedan od osnivača SubLegal advokatske kancelarije i konsultantske kuće i poseduje višegodišnje iskustvo 
     u zastupanju klijenata kako u Republici Srbiji tako i u Crnoj Gori.
-    <br>Redovno savetuje klijente u oblasti korporativnog, privrednog kao i poreskog prava.  
+    <br><br>
+    Redovno savetuje klijente u oblasti korporativnog, privrednog kao i poreskog prava.  
     Posebno je prepoznat po svom pragmatičnom pristupu problemima odnosno rešenjima sa 
     akcentom na postupcima koji se tiču nepokretnosti, složenim građevinskim sporovima, 
     privrednim sporovima i imigracionim postupcima. 
-    <br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda. 
-    <br>
+    <br><br>
+    Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda. 
+    <br><br>
     <a href='mailto:nikola@sublegal.rs' style='text-decoration: none'><img src=\"../assets/footer mail.png\"></a> 
     <a href='https://www.linkedin.com/in/nikola-suboti%C4%87-4518922a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style='text-decoration: none; color:black'><img src=\"../assets/linkedin-01.png\"></a>
     ";
     $subara_text = "Dugogodišnji je advokat i jedan je od osnivača SubLegal advokatske kancelarije i konsultantske kuće. 
-    <br>Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz
-    satupanje domaćih i stranih kompanija i grupacija koje posluju na teritoriji Zapadnog
+    <br><br>
+    Sa akcentom na korporativno i privredno pravo svoju karijeru je gradio kroz
+    zastupanje domaćih i stranih kompanija i grupacija koje posluju na teritoriji Zapadnog
     Balkana. Sa posebnom pažnjom usmerenom na razvoj poslovanja, učestvovao je u
     mnogim projektima koji se tiču različitih branši kao što su građevinarstvo, nekretnine,
     distribucija, avioindustrija, transport, retail i prehrambena industrija. Vodeći je
-    konsultant u oblasti M&amp;A.<br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
-    <br>
+    konsultant u oblasti M&amp;A.
+    <br><br>Diplomirao je na Pravnom fakultetu Univerziteta u Beogradu i član je advokatske komore Beograda.
+    <br><br>
 <a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'><img src=\"../assets/footer mail.png\"></a> 
 <a href='https://www.linkedin.com/in/aleksandar-%C5%A1ubari%C4%87-64320422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style='text-decoration: none; color:black'><img src=\"../assets/linkedin-01.png\"></a>
 ";
@@ -49,11 +53,11 @@ if ($language == "rs") {
     the members of the SubLegal team are dedicated to realizing rights and justice for our clients";
     $founders_label = "FOUNDERS";
     $attorney_of_law_label = "founder/attorney of law";
-    $subara_text = "has been a lawyer for many years, and he is co-founder of the SubLegal law and consulting firm.
-        <br>
-        He gained experience in corporate and commercial law by joining both domestic and foreign companies 
-        and groups operating on the territory of the Western Balkans. With special attention focused on business
-        development, he participated in many projects concerning various industries such as construction, 
+    $subara_text = "A lawyer with many years of experience and one of the founders of the SubLegal law and consulting firm.
+        <br><br>
+        He gained experience in corporate and commercial law by representing domestic and foreign companies and groups operating on the territory of the Western Balkans.
+        With special attention focused on business
+        development, he participated in many blog concerning various industries such as construction, 
         real estate, distribution, aviation, transport, retail and food industry. Leading specialist in M&A field.
         <br><br>
         He graduated from the Faculty of Law at the University of Belgrade and is a member of the Belgrade Bar Association.
@@ -61,9 +65,9 @@ if ($language == "rs") {
         <a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'><img src=\"../assets/footer mail.png\"></a> 
         <a href='https://www.linkedin.com/in/aleksandar-%C5%A1ubari%C4%87-64320422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' style='text-decoration: none; color:black'><img src=\"../assets/linkedin-01.png\"></a>
         ";
-    $subo_text = "is co-founder of the SubLegal law and consulting firm and has many years of experience
+    $subo_text = "He is a co-founder of the SubLegal law and consulting firm and has many years of experience
     in representing clients both in the Republic of Serbia and in Montenegro.
-    <br>
+    <br><br>
     In the areas of corporate, commercial, and tax law, he frequently provides advice to clients. 
     His pragmatic approach to problems i.e. solutions, specifically focusing on real estate matters,
     complex construction disputes, commercial matters, and immigration matters, is well-recognized.

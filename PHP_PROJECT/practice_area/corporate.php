@@ -204,5 +204,4 @@ if ($language == "rs") {
 </div>
 <?php include('../helpers/footer.php'); ?>
 </body>
-
 </html>

@@ -1,14 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Playfair+Display:wght@500;700&family=Raleway:wght@500;700&display=swap');
 body h1, h2, h3, h4, h5, h6, .nav-link{
     /*font-family: 'Raleway', sans-serif;*/
-    font-family: "Palatino Linotype";
+    font-family: "Lora", serif;
 }
 
 body{
     font-family: "Raleway", sans-serif;
     overflow-x: hidden;
     background-color: #cbcbcb;
+}
+
+.overflow-container{
+    overflow-x: hidden;
 }
 
 img{
@@ -146,11 +149,9 @@ footer a:hover {
 }
 
 .who-are-we{
-    background-image: url("../assets/razlike_bg.jpg");
-    background-position: 25% 70%;
-    background-repeat: no-repeat;
-    background-size: 1200px;
-    margin-right: 20vw;
+    background: url("../assets/razlike_bg.jpg") no-repeat;
+    background-size: cover;
+    margin-right: 40vw;
 }
 
 .about-bg{
@@ -207,7 +208,7 @@ footer a:hover {
 
 .animated-div {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(0);
     transition: opacity 1s, transform 1s;
 }
 
@@ -281,7 +282,7 @@ footer a:hover {
 }
 
 .real-estate-box-text{
-    max-width: 750px;
+    max-width: 850px;
     padding: 3vw;
     background-color: #cbcbcb;
     animation: slideInRight 1s ease;
@@ -308,25 +309,30 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1030px) {
-    /* On desktop, move the background image 25% to the right */
     .home-bg{
         background-position: 270% center;
     }
     .about-bg{
         background-position: 135% center;
     }
+    #center-on-mobile{
+        padding-left: 18px;
+    }
 }
 
 @media screen and (max-width: 1030px) {
-    /* On desktop, move the background image 25% to the right */
+
+    #center-on-mobile{
+        text-align: center;
+    }
     .home-bg{
-        background-position: 53% 95%;
-        background-size: 200%;
+        background-position: 53% 90%;
+        background-size: 250%;
         margin-left: 0;
         margin-right: 0;
     }
     .about-bg{
-        background-position: 50% 30%;
+        background-position: 50% 20%;
         background-size: 100%;
         margin-left: 0;
         margin-right: 0;
@@ -346,22 +352,26 @@ footer a:hover {
 
     .contact-bg{
         background-position: center;
-        background-size: cover;
+        background-size: 160%;
         margin-left: 0;
         margin-right: 0;
     }
 
     .who-are-we{
         background-size: 200%;
-        background-position: 60% 400%;
+        background-position: 60% 300%;
         width: 100%;
         margin-right: 0;
         margin-left: 0;
         margin-top: 0;
     }
 
-    .home-box-text,
-    .distinct-box-text,
+    .home-box-text{
+        margin: 50vh 0 40vw;
+    }
+    .distinct-box-text{
+        margin: 0;
+    }
     .real-estate-box-text,
     .tax-box-text,
     .intellectual-box-text{
@@ -485,7 +495,11 @@ h2 {
     transition: 0.3s;
     padding: 10px;
     margin: 10px;
-    height: 310px;
+    min-height: 320px;
+}
+
+.card h2{
+    font-size: 25px;
 }
 
 .project-card{

@@ -266,6 +266,11 @@ if ($language == "rs") {
                             <?php echo $nepokretnost_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="real_estate.php" style="color: #4147c0">see more...</a>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-3">
@@ -281,6 +286,10 @@ if ($language == "rs") {
                             <?php echo $korp_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="corporate.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -294,6 +303,10 @@ if ($language == "rs") {
                             <?php echo $poresko_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="tax_law.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -307,12 +320,16 @@ if ($language == "rs") {
                             <?php echo $imigraciono_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="immigration.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-sm-12 pb-3">
-        <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2">
+        <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2" style="padding: 10px">
             <div class="col-sm-3" id="hover_white">
                 <div class="card card-intellectual">
                     <a href="intellectual.php">
@@ -325,6 +342,10 @@ if ($language == "rs") {
                             <?php echo $int_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end exp-hover">
+                        <a href="intellectual.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -337,6 +358,10 @@ if ($language == "rs") {
                             <?php echo $radno_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="employment.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -349,6 +374,10 @@ if ($language == "rs") {
                             <?php echo $parnica_text; ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="litigation_enforcement.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
         </div>

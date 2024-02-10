@@ -190,7 +190,7 @@ function navigateToSelectedPage() {
     // Check if a valid option is selected
     if (selectedValue) {
         // Navigate to the selected page
-        window.location.href = "../under_construction/under_construction.php";
+        window.location.href = "../error/error.php";
     }
 }
 document.addEventListener('DOMContentLoaded', function() {

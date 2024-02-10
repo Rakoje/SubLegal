@@ -55,7 +55,7 @@ if ($language == "rs") {
     $text5 = "Tax optimization of acquisition structures and tax restructuring after acquisitions";
     $text6 = "Tax on real estate, investments, property tax, alienation of property and capital gains and rental income tax";
     $text7 = "Immigration and employment tax issues (payroll taxes, including analysis and optimization of tax costs related to labor force, tax implications employee stock option plans)";
-    $text8 = "Taxation of financing projects, including taxation of general lending, project financing, taxation of financial instruments and derivatives and taxation of financial service providers";
+    $text8 = "Taxation of financing blog, including taxation of general lending, project financing, taxation of financial instruments and derivatives and taxation of financial service providers";
     $text9 = "Advising on double taxation";
     $text10 = "Consulting on transfer prices";
     $text11 = "Representation in tax disputes, including administrative disputes";

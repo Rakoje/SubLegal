@@ -6,7 +6,7 @@
 $language = $_SESSION['language'];
 
 if ($language == "rs") {
-    $welcome_label = "DOBRODOŠLI NA MESTO GDE BIZNIS SUSREĆE PRAVO";
+    $welcome_label = "MESTO GDE BIZNIS SUSREĆE PRAVO";
     $welcome_text = "SUBLEGAL je advokatska kancelarija specijalizovana u sferi privredno – poslovnog prava sa sedištem u
             Beogradu, Republika Srbija. Pružamo različite konsultantske usluge domaćim i stranim privrednim društvima
             koja posluju ili planiraju poslovanje na teritoriji Republike Srbije, Crne Gore, Hrvatske i Severne
@@ -130,8 +130,8 @@ if ($language == "rs") {
                             i aktivno učešće u pregovorima jednako važno kao i zastupanje pred sudom, kako u parničnom,
                             tako
                             i u drugim srodnim vrstama postupaka.";
-    $tim_label = "TIM";
-    $advokat_label = "advokat";
+    $tim_label = "";
+    $advokat_label = "Osnivač/Advokat";
     $detalji_label = "DETALJI";
 } else {
     $welcome_label = "WHERE BUSINESS MEETS LAW";
@@ -268,8 +268,8 @@ if ($language == "rs") {
     of a temporary measure before all courts in the Republic of Serbia and Montenegro, will certainly contribute to 
     your business and provide additional security.
     ";
-    $tim_label = "TEAM";
-    $advokat_label = "attorney";
+    $tim_label = "";
+    $advokat_label = "Founder/Attorney at law";
     $detalji_label = "DETAILS";
 }
 ?>
@@ -288,18 +288,18 @@ if ($language == "rs") {
 </div>
 <div class="row who-are-we">
     <div class="col-sm-12 distinct-box-text animated-div" id="targetDiv">
-        <div class="text-center"><h1 style="font-size: 30px"><?php echo  $diff_label2 ?></h1></div>
+        <div class="text-center"><h1 style="font-size: 30px"><?php echo $diff_label2 ?></h1></div>
         <br>
         <div><?php echo $diff_text ?>
         </div>
         <br>
         <div>
-            <a href="#dalje" style="text-decoration: none"><?php echo  $usl_label ?></a>
+            <a href="#dalje" style="text-decoration: none"><?php echo $usl_label ?></a>
         </div>
     </div>
 </div>
 <div class="row home-about home-desc" id="dalje">
-    <h1 class="text-center"><?php  echo $usl_label2 ?></h1>
+    <h1 class="text-center"><?php echo $usl_label2 ?></h1>
     <div class="col-sm-12">
         <div class="row text-center d-flex justify-content-center" style="padding: 10px">
             <div class="col-sm-3">
@@ -309,11 +309,15 @@ if ($language == "rs") {
                              alt="">
                         <img src="../assets/apartment_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2><?php echo  $nepokretnost_label ?></h2>
+                        <h2><?php echo $nepokretnost_label ?></h2>
                         <div class="limited-text">
-                            <?php echo  $nepokretnost_text ?>
+                            <?php echo $nepokretnost_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/real_estate.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -324,11 +328,15 @@ if ($language == "rs") {
                         <img src="../assets/account_balance_FILL0_wght400_GRAD200_opsz48 belo.png"
                              class="icons hover-img"
                              alt="">
-                        <h2><?php echo  $korp_label ?></h2>
+                        <h2><?php echo $korp_label ?></h2>
                         <div class="limited-text">
-                            <?php echo  $korp_text ?>
+                            <?php echo $korp_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/corporate.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -337,11 +345,15 @@ if ($language == "rs") {
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/balance_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2><?php echo  $poresko_label ?></h2>
+                        <h2><?php echo $poresko_label ?></h2>
                         <div class="limited-text">
-                            <?php  echo $poresko_text ?>
+                            <?php echo $poresko_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/tax_law.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -350,9 +362,13 @@ if ($language == "rs") {
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/luggage_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2><?php echo  $imigraciono_label ?></h2>
+                        <h2><?php echo $imigraciono_label ?></h2>
                         <div class="limited-text">
-                            <?php echo  $imigraciono_text ?>
+                            <?php echo $imigraciono_text ?>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-end">
+                            <a href="practice_area/immigration.php" style="color: #4147c0">see more...</a>
                         </div>
                     </a>
                 </div>
@@ -360,7 +376,7 @@ if ($language == "rs") {
         </div>
     </div>
     <div class="col-sm-12 pb-3">
-        <div class="row d-flex justify-content-center text-center animated-div" id="targetDiv2">
+        <div class="row d-flex justify-content-center text-center"  style="padding: 10px">
             <div class="col-sm-3">
                 <div class="card card-intellectual" id="hover_white">
                     <a href="practice_area/intellectual.php">
@@ -368,11 +384,15 @@ if ($language == "rs") {
                              alt="">
                         <img src="../assets/copyright_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img"
                              alt="">
-                        <h2><?php  echo $int_label ?></h2>
+                        <h2><?php echo $int_label ?></h2>
                         <div class="limited-text">
-                            <?php  echo $int_text ?>
+                            <?php echo $int_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/intellectual.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -380,10 +400,14 @@ if ($language == "rs") {
                     <a href="practice_area/employment.php">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/badge_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">
-                        <h2><?php echo  $radno_label ?></h2>
-                        <div class="limited-text"><?php echo  $radno_text ?>
+                        <h2><?php echo $radno_label ?></h2>
+                        <div class="limited-text"><?php echo $radno_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/employment.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -391,31 +415,36 @@ if ($language == "rs") {
                     <a href="practice_area/litigation_enforcement.php">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48.png" class="icons no-hover-img" alt="">
                         <img src="../assets/gavel_FILL0_wght400_GRAD200_opsz48 belo.png" class="icons hover-img" alt="">
-                        <h2><?php  echo $parnica_label ?></h2>
-                        <div class="limited-text"><?php echo  $parnica_text ?>
+                        <h2><?php echo $parnica_label ?></h2>
+                        <div class="limited-text"><?php echo $parnica_text ?>
                         </div>
                     </a>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <a href="practice_area/litigation_enforcement.php" style="color: #4147c0">see more...</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="row home-about home-desc">
-    <div class="row d-flex justify-content-center">
-        <h1 class="text-center"><?php  echo $tim_label ?></h1>
+    <div class="row d-flex justify-content-center animated-div" id="targetDiv2">
+        <h1 class="text-center"><?php echo $tim_label ?></h1>
         <div class="col-sm-6 smt">
             <br>
             <img src="../assets/subara.jpg" alt="" class="person-img img-fluid">
             <div class="founder-text-box">
                 <h3>ALEKSANDAR ŠUBARIĆ</h3>
-                <p><?php  echo $advokat_label ?>
+                <p><?php echo $advokat_label ?>
                     <a href='mailto:aleksandar@sublegal.rs' style='text-decoration: none'>
                         <img src="assets/footer mail.png" alt=""></a>
                     <a href='https://www.linkedin.com/in/aleksandar-%C5%A1ubari%C4%87-64320422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
                        style='text-decoration: none; color:black'><img src="assets/linkedin-01.png" alt=""></a>
 
                 </p>
-                <a href="about/about.php#subara" style="text-decoration: none; text-align: right"><?php echo  $detalji_label ?></a>
+                <a href="about/about.php#subara"
+                   style="text-decoration: none; text-align: right"><?php echo $detalji_label ?></a>
             </div>
         </div>
         <div class="col-sm-6 smt">
@@ -423,12 +452,13 @@ if ($language == "rs") {
             <img src="../assets/subo.jpg" alt="" class="person-img img-fluid">
             <div class="founder-text-box">
                 <h3>NIKOLA SUBOTIĆ</h3>
-                <p><?php echo  $advokat_label ?>
+                <p><?php echo $advokat_label ?>
                     <a href='mailto:nikola@sublegal.rs' style='text-decoration: none'><img src="assets/footer mail.png"></a>
                     <a href='https://www.linkedin.com/in/nikola-suboti%C4%87-4518922a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
                        style='text-decoration: none; color:black'><img src="assets/linkedin-01.png"></a>
                 </p>
-                <a href="about/about.php#subo" style="text-decoration: none; text-align: right"><?php echo  $detalji_label ?></a>
+                <a href="about/about.php#subo"
+                   style="text-decoration: none; text-align: right"><?php echo $detalji_label ?></a>
             </div>
         </div>
     </div>

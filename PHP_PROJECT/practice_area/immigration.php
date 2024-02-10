@@ -34,7 +34,7 @@ if ($language == "rs") {
     $text4 = "Zastupanje klijenata prilikom aplikacije za odobrenje privremenog boravka";
     $text5 = "Zastupanje klijenata prilikom aplikacije za odobrenje stalnog nastanjenja u Republici Srbiji";
     $text6 = "Zastupanje pred nadležnim organima prilikom aplikacije za Radne dozvole";
-    $text7 = "Podrška u svim fazama postupka prilikom sticanja Državljanstva Republike Srbije";
+    $text7 = "Podrška u svim fazama postupka prilikom sticanja Državljanstva Republike Srbije i Crne Gore";
 
     $nepokretnost_label = "Nepokretnosti i izgradnja";
     $korp_label = "Korporativno i privredno pravo, M&A";
@@ -69,6 +69,16 @@ if ($language == "rs") {
     <br><br>
     Legal service includes:
 ";
+    $text1 = "Tax planning";
+    $text2 = "Advising and representing companies when transferring employees to the Republic of
+Serbia during all stages of the procedure";
+    $text3 = "Providing legal advice and representation when applying for all types of visas";
+    $text4 = "Representation of clients during applications for approval of temporary residence";
+    $text5 = "Representation of clients during the application for approval of permanent residence in
+Republic of Serbia";
+    $text6 = "Representation before the competent authorities when applying for Work Permits";
+    $text7 = "Support in all stages of the procedure when acquiring the Citizenship of the Republic
+of Serbia and Montenegro";
     $nepokretnost_label = "Real estate and construction";
     $korp_label = "Corporate and business law, M&A";
     $poresko_label = "Tax law";

@@ -1,7 +1,7 @@
 <?php
 
-$host = "localhost";
-$database = "sub_legal";
+$host = "root";
+$database = "sublegal_rs";
 $user = "root";
 $password = "";
 
